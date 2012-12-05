@@ -1,4 +1,6 @@
-languages-dialogo
-=================
+### Language packs
 
-Language packs
+Download:
+
+https://github.com/norv/languages-dialogo/downloads
+
