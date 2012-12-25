@@ -2,5 +2,5 @@
 
 Download:
 
-https://github.com/norv/languages-dialogo/downloads
+https://github.com/elkarte/languages/downloads
 
