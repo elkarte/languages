@@ -136,8 +136,8 @@ $helptxt['time_format'] = '<strong>Time Format</strong><br />
 	<em>* Does not work on Windows-based servers.</em></span>';
 
 $helptxt['live_news'] = '<strong>Live announcements</strong><br />
-	This box shows recently updated announcements from <a href="http://www.simplemachines.org/" target="_blank" class="new_win">www.simplemachines.org</a>.
-	You should check here every now and then for updates, new releases, and important information from Simple Machines.';
+	This box shows recently updated announcements from <a href="http://www.elkarte.net/" target="_blank" class="new_win">www.elkarte.net/</a>.
+	You should check here every now and then for updates, new releases, and important information from Elkarte.';
 
 $helptxt['registrations'] = '<strong>Registration Management</strong><br />
 	This section contains all the functions that could be necessary to manage new registrations on the forum. It contains up to four
@@ -172,6 +172,8 @@ $helptxt['modlog'] = '<strong>Moderation Log</strong><br />
 $helptxt['adminlog'] = '<strong>Administration Log</strong><br />
 	This section allows members of the admin team to track some of the administrative actions that have occurred on the forum. To ensure that
 	admins cannot remove references to the actions they have performed, entries may not be deleted until 24 hours after the action was taken.';
+$helptxt['badbehaviorlog'] = '<strong>Bad Behavior Log</strong><br />
+	This section allows members of the admin team to view some of the bad behavior actions that have occurred on the forum. This log is automatically pruned by the bad behavior function so it will only contain the last week of activity.';
 $helptxt['warning_enable'] = '<strong>User Warning System</strong><br />
 	This feature enables members of the admin and moderation team to issue warnings to members - and to use a members warning level to determine the
 	actions available to them on the forum. Upon enabling this feature a permission will be available within the permissions section to define
@@ -246,6 +248,7 @@ $helptxt['userLanguage'] = 'Turning this option on will allow users to select wh
 $helptxt['trackStats'] = 'Stats:<br />This will allow users to see the latest posts and the most popular topics on your forum.
 		It will also show several statistics, like the most members online, new members and new topics.<hr />
 		Page views:<br />Adds another column to the stats page with the number of pageviews on your forum.';
+$helptxt['enable_disregard'] = 'Enabling this option will allow users to selectively turn off new reply notifications for topics in which they had previously posted.';
 $helptxt['titlesEnable'] = 'Switching Custom Titles on will allow members with the relevant permission to create a special title for themselves.
 		This will be shown underneath the name.<br /><em>For example:</em><br />Jeff<br />Cool Guy';
 $helptxt['topbottomEnable'] = 'This will add go up and go down buttons, so that member can go to the top and bottom of a page
@@ -361,9 +364,9 @@ $helptxt['xmlnews_enable'] = 'Allows people to link to <a href="%1$s?action=.xml
 $helptxt['hotTopicPosts'] = 'Change the number of posts for a topic to reach the state of a &quot;hot&quot; or
 	&quot;very hot&quot; topic.';
 $helptxt['globalCookies'] = 'Makes log in cookies available across subdomains.  For example, if...<br />
-	Your site is at http://www.simplemachines.org/,<br />
-	And your forum is at http://forum.simplemachines.org/,<br />
-	Using this option will allow you to access the forum\'s cookie on your site.  Do not enable this if there are other subdomains (like hacker.simplemachines.org) not controlled by you.';
+	Your site is at http://www.sitename.org/,<br />
+	And your forum is at http://forum.sitename.org/,<br />
+	Using this option will allow you to access the forum\'s cookie on your site.  Do not enable this if there are other subdomains (like hacker.elkarte.net) not controlled by you.';
 $helptxt['globalCookiesDomain'] = 'Define the main domain to be used when log in cookies are available across subdomains';
 $helptxt['secureCookies'] = 'Enabling this option will force the cookies created for users on your forum to be marked as secure. Only enable this option if you are using HTTPS throughout your site as it will break cookie handling otherwise!';
 $helptxt['securityDisable'] = 'This <em>disables</em> the additional password check for the administration section. This is not recommended!';
@@ -385,7 +388,7 @@ $helptxt['attachmentEncryptFilenames'] = 'Encrypting attachment filenames allows
 	difficult to rebuild your database if something drastic happened.';
 
 $helptxt['failed_login_threshold'] = 'Set the number of failed login attempts before directing the user to the password reminder screen.';
-$helptxt['loginHistoryDays'] = 'The number of days to keep login history under user profile tracking. Default is 30 days.';
+$helptxt['loginHistoryDays'] = 'The number of days to keep login history under user profile history. Default is 30 days.';
 $helptxt['oldTopicDays'] = 'If this option is enabled a warning will be displayed to the user when attempting to reply to a topic which has not had any new replies for the amount of time, in days, specified by this setting. Set this setting to 0 to disable the feature.';
 $helptxt['edit_wait_time'] = 'Number of seconds allowed for a post to be edited before logging the last edit date.';
 $helptxt['edit_disable_time'] = 'Number of minutes allowed to pass before a user can no longer edit a post they have made. Set to 0 disable. <br /><br /><em>Note: This will not affect any user who has permission to edit other people\'s posts.</em>';
@@ -428,7 +431,7 @@ $helptxt['default_personal_text'] = 'Sets the default text a new user will have 
 
 $helptxt['modlog_enabled'] = 'Logs all moderation actions.';
 
-$helptxt['guest_hideContacts'] = 'If selected this option will hide the email addresses and messenger contact details
+$helptxt['guest_hideContacts'] = 'If selected this option will hide the email addresses and other contact details
 	of all members from any guests on your forum';
 
 $helptxt['registration_method'] = 'This option determines what method of registration is used for people wishing to join your forum. You can select from:<br /><br />
@@ -484,9 +487,9 @@ $helptxt['allow_hideOnline'] = 'With this option enabled all members will be abl
 $helptxt['make_email_viewable'] = 'If this option is enabled instead of users email addresses being hidden to normal members and guests they will be publicly viewable on the forum. Enabling this will put your users at greater risk of being victims of spam as a result of email harvesters visiting your forum. Note this setting does not override the user setting for hiding their email address from users. Enabling this setting is <strong>not</strong> recommended.';
 $helptxt['meta_keywords'] = 'These keywords are sent in the output of every page to indicate to search engines (etc) the key content of your site. They should be a comma separated list of words, and should not use HTML.';
 
-$helptxt['latest_support'] = 'This panel shows you some of the most common problems and questions on your server configuration. Don\'t worry, this information isn\'t logged or anything.<br /><br />If this stays as &quot;Retrieving support information...&quot;, your computer probably cannot connect to <a href="http://www.simplemachines.org/" target="_blank" class="new_win">www.simplemachines.org</a>.';
-$helptxt['latest_packages'] = 'Here you can see some of the most popular and some random packages or mods, with quick and easy installations.<br /><br />If this section doesn\'t show up, your computer probably cannot connect to <a href="http://www.simplemachines.org/" target="_blank" class="new_win">www.simplemachines.org</a>.';
-$helptxt['latest_themes'] = 'This area shows a few of the latest and most popular themes from <a href="http://www.simplemachines.org/" target="_blank" class="new_win">www.simplemachines.org</a>.  It may not show up properly if your computer can\'t find <a href="http://www.simplemachines.org/" target="_blank" class="new_win">www.simplemachines.org</a>, though.';
+$helptxt['latest_support'] = 'This panel shows you some of the most common problems and questions on your server configuration. Don\'t worry, this information isn\'t logged or anything.<br /><br />If this stays as &quot;Retrieving support information...&quot;, your computer probably cannot connect to the website.';
+$helptxt['latest_packages'] = 'Here you can see some of the most popular and some random packages or mods, with quick and easy installations.<br /><br />If this section doesn\'t show up, your computer probably cannot connect to <a href="http://www.elkarte.net/" target="_blank" class="new_win">www.elkarte.net/</a>.';
+$helptxt['latest_themes'] = 'This area shows a few of the latest and most popular themes from <a href="http://www.elkarte.net/" target="_blank" class="new_win">www.elkarte.net/</a>.  It may not show up properly if your computer can\'t find <a href="http://www.elkarte.net/" target="_blank" class="new_win">www.elkarte.net/</a>, though.';
 
 $helptxt['secret_why_blank'] = 'For your security, your password and the answer to your secret question are encrypted so that the software will never tell you, or anyone else, what they are.';
 $helptxt['moderator_why_missing'] = 'Since moderation is done on a board-by-board basis, you have to make members moderators from the <a href="javascript:window.open(\'%1$s?action=admin;area=manageboards\'); self.close();">board management interface</a>.';
@@ -512,11 +515,14 @@ $helptxt['maintenance_backup'] = 'This area allows you to save a copy of all the
 $helptxt['maintenance_rot'] = 'This allows you to <strong>completely</strong> and <strong>irrevocably</strong> remove old topics.  It is recommended that you try to make a backup first, just in case you remove something you didn\'t mean to.<br /><br />Use this option with care.';
 $helptxt['maintenance_members'] = 'This allows you to <strong>completely</strong> and <strong>irrevocably</strong> remove member accounts from your forum.  It is <strong>highly</strong> recommended that you try to make a backup first, just in case you remove something you didn\'t mean to.<br /><br />Use this option with care.';
 
+$helptxt['avatar_default'] = 'With this option enabled, a default avatar is shown for all users without their own avatar. The file named \'default_avatar.png\' is located in the images folder inside the themes directory.';
 $helptxt['avatar_server_stored'] = 'This allows your members to pick from avatars stored on your server itself.  They are, generally, in the same place as the forum under the avatars directory.<br />As a tip, if you create directories in that folder, you can make &quot;categories&quot; of avatars.';
 $helptxt['avatar_external'] = 'With this enabled, your members can type in a URL to their own avatar.  The downside of this is that, in some cases, they may use avatars that are overly large or portray images you don\'t want on your forum.';
 $helptxt['avatar_download_external'] = 'With this option enabled, the URL given by the user is accessed to download the avatar at that location. On success, the avatar will be treated as uploadable avatar.';
 $helptxt['avatar_upload'] = 'This option is much like &quot;Allow members to select an external avatar&quot;, except that you have better control over the avatars, a better time resizing them, and your members do not have to have somewhere to put avatars.<br /><br />However, the downside is that it can take a lot of space on your server.';
 $helptxt['avatar_download_png'] = 'PNGs are larger, but offer better quality compression.  If this is unchecked, JPEG will be used instead - which is often smaller, but also of lesser or blurry quality.';
+$helptxt['gravatar'] = 'Gravatar (globally recognized avatar) is a service for providing globally unique avatars. For more details please visit the Gravatar <a href="http://www.gravatar.com" target="_blank"><strong>website</strong>.</a>';
+$helptxt['gravatar_rating'] = 'Gravatar allows users to self-rate their images so that they can indicate if an image is appropriate for a certain audience. By default, only \'G\' rated images are displayed unless you indicate that you would like to see higher ratings. <br /><br /><ul><li><strong>g:</strong> suitable for display on all websites with any audience type.</li><li><strong>pg:</strong> may contain rude gestures, provocatively dressed individuals, the lesser swear words, or mild violence.</li><li><strong>r:</strong> may contain such things as harsh profanity, intense violence, nudity, or hard drug use.</li><li><strong>x:</strong> may contain hardcore sexual imagery or extremely disturbing violence.</li></ul>';
 $helptxt['custom_avatar_enabled'] = 'It is recommended that you enable this for best performance as it will reduce both the processor load, and database load when viewing pages with avatars.<br />You must enter a public accessible directory to save avatars in, and the public accessible url for that directory.  For example a directory of /home/yourfourmname/public_html/NewAvatarDirectory and a url of http://www.yourforumname.com/NewAvatarDirectory';
 $helptxt['disableHostnameLookup'] = 'This disables host name lookups, which on some servers are very slow.  Note that this will make banning less effective.';
 
@@ -555,7 +561,7 @@ $helptxt['posts_and_topics'] = '
 $helptxt['spider_mode'] = 'Sets the logging level.<br />
 Standard - Logs minimal spider activity.<br />
 Moderate - Provides more accurate statistics.<br />
-Agressive - As for &quot;Moderate&quot; but logs data about each page visited.';
+Aggressive - As for &quot;Moderate&quot; but logs data about each page visited.';
 
 $helptxt['spider_group'] = 'By selecting a restrictive group, when a guest is detected as a search crawler it will automatically be assigned any &quot;deny&quot; deny permissions of this group in addition to the normal permissions of a guest. You can use this to provide lesser access to a search engine than you would a normal guest. You might for example wish to create a new group called &quot;Spiders&quot; and select that here. You could then deny permission for that group to view profiles to stop spiders indexing your members profiles.<br />Note: Spider detection is not perfect and can be simulated by users so this feature is not guaranteed to restrict content only to those search engines you have added.';
 $helptxt['show_spider_online'] = 'This setting allows you to select whether spiders should be listed in the who\'s online list on the board index and &quot;Who\'s Online&quot; page. Options are:
@@ -616,3 +622,20 @@ $helptxt['custom_mask'] = 'The input mask is important for your forum\'s securit
 		\ - Escapes the next character.<br />
 	</div><br /><br />
 	More information and advanced techniques may be found on the internet.';
+
+$helptxt['badbehavior_reverse_proxy_addresses'] = 'In some server farm configurations, Bad Behavior may be unable to determine whether a remote request originated from your reverse proxy/load balancer or arrived directly. In this case, you should add all of the internal IP addresses for your reverse proxy/load balancer servers, as seen from the origin server. These can usually be omitted; however if you have a configuration where some requests can bypass the reverse proxy/load balancer and connect to the origin server directly, then you should use this option. You should also use this option when incoming requests pass through two or more reverse proxies before reaching the origin server.<br /><br />Enter each IP address or CIDR netblocks separated by a | (1.2.3.4|5.4.3.2/27)';
+$helptxt['badbehavior_reverse_proxy_header'] = 'When a reverse proxy is in use, Bad Behavior looks at this HTTP header to determine the actual source IP address for each web request. Your reverse proxy or load balancer must add an HTTP header containing the remote IP address where the connection originated. Most do this by default; check the configuration for your reverse proxy or load balancer to ensure that this header is sent.<br /><br />If you use the CloudFlare service, you should change this option to CF-Connecting-IP.';
+$helptxt['badbehavior_reverse_proxy'] = 'When enabled, Bad Behavior will assume it is receiving a connection from a reverse proxy, when a specific HTTP header is received.';
+$helptxt['badbehavior_eucookie'] = 'Set this option on if you believe Bad Behavior\'s site security cookie is not exempt from the 2012 EU cookie regulation.</a>';
+$helptxt['badbehavior_httpbl_maxage'] = 'This is the number of days since suspicious activity was last observed from an IP address by Project Honey Pot. Bad Behavior will block requests with a maximum age equal to or less than this setting.';
+$helptxt['badbehavior_httpbl_threat'] = 'This number provides a measure of how suspicious an IP address is, based on activity observed at Project Honey Pot. Bad Behavior will block requests with a threat level equal or higher to this setting. Project Honey Pot has <a href="http://www.projecthoneypot.org/threat_info.php" target="_blank">more information on this parameter</a>.';
+$helptxt['badbehavior_httpbl_key']= 'Bad Behavior is capable of using data from the <a href="http://www.projecthoneypot.org/faq.php#g" target="_blank">http:BL</a> service provided by <a href="http://www.projecthoneypot.org/" target="_blank">Project Honey Pot</a> to screen requests.<br /><br />This is purely optional; however if you wish to use it, you must <a href="http://www.projecthoneypot.org/httpbl_configure.php" target="_blank">sign up for the service</a> and obtain an API key. To disable http:BL use, remove the API key from your settings.';
+$helptxt['badbehavior_verbose'] = 'Enabling verbose mode causes all HTTP requests to be logged. When verbose mode is off, only blocked requests and suspicious requests are logged.<br /><br />Verbose mode is off by default. Using verbose mode is not recommended as it can significantly slow down your site; it exists to capture data from live spammers which are not being blocked.';
+$helptxt['badbehavior_logging'] = 'Should Bad Behavior keep a log of requests? On by default, and it is not recommended to disable it, since it will cause additional spam to get through.';
+$helptxt['badbehavior_strict'] = 'Bad Behavior operates in two blocking modes: normal and strict.<br />When strict mode is enabled, additional checks for (old) software which have been spam sources are enabled, but occasional legitimate users using the same software may be blocked as well.';
+$helptxt['badbehavior_offsite_forms'] = 'Bad Behavior normally prevents your site from receiving data posted from forms on other web sites. This prevents spammers from, e.g., using a Google cached version of your web site to send you spam. However, some web applications such as OpenID require that your site be able to receive form data in this way. If you are running OpenID, enable this option.';
+$helptxt['badbehavior_display_stats'] = 'Enabling this option will add a blurb to your web site footer (theme dependant) advertising Bad Behavior’s presence and the number of recently blocked requests. This option is not available or has no effect when logging is not in use.';
+$helptxt['badbehavior_postcount_wl'] = 'This allows you to bypass bad behavior checks for users over a certain post count.<br />-1 will bypass all registered users, including those with no posts<br />0 will disable bypassing and scan everyone regardless of post count<br />A post count number greater than zero under which users will be checked.';
+$helptxt['badbehavior_ip_wl'] = 'IP address ranges use the CIDR format.  To remove an address just leave it blank and then save';
+$helptxt['badbehavior_useragent_wl'] = 'User agents are matched by exact match only.';
+$helptxt['badbehavior_url_wl'] = 'URLs are matched from the first / after the server name up to, but not including, the ? (if any). The URL to be whitelisted is a URL on YOUR site. A partial URL match is permitted, so URL whitelist entries should be as specific as possible, but no more specific than necessary.<br />For instance, /example would match /example.php and /example/address';

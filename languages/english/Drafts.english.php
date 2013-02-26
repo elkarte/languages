@@ -1,5 +1,5 @@
 <?php
-// Version: 1.0; Profile
+// Version: 1.0; Drafts
 
 global $scripturl, $context;
 
@@ -36,4 +36,4 @@ $txt['drafts_autosave_frequency_subnote'] = 'The minimum allowable value is 30 s
 $txt['drafts_pm_enabled'] = 'Enable the saving of PM drafts';
 $txt['drafts_post_enabled'] = 'Enable the saving of Post drafts';
 $txt['drafts_none'] = 'No Subject';
-$txt['drafts_saved'] = 'Draft was sucessfuly saved';
+$txt['drafts_saved'] = 'Draft was successfully saved';

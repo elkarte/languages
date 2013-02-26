@@ -1,6 +1,6 @@
 <?php
 
-// Version: 2.1; Packages
+// Version: 1.0; Packages
 
 $txt['package_proceed'] = 'Proceed';
 $txt['php_script'] = 'Modification file was extracted, but this modification also comes with a PHP script which should be executed before it will work';
@@ -77,7 +77,7 @@ $txt['package_installed_redirect_go_now'] = 'Redirect Now';
 $txt['package_installed_redirect_cancel'] = 'Return to Package Manager';
 
 $txt['packages_latest'] = 'Latest Packages';
-$txt['packages_latest_fetch'] = 'Attempting to fetch the most popular and recent packages from www.simplemachines.org...';
+$txt['packages_latest_fetch'] = 'Attempting to fetch the most popular and recent packages ...';
 
 $txt['package_upgrade'] = 'Upgrade';
 $txt['package_uninstall_readme'] = 'Uninstallation Readme';
@@ -143,7 +143,7 @@ $txt['package_install_options_ftp_server'] = 'FTP Server';
 $txt['package_install_options_ftp_port'] = 'Port';
 $txt['package_install_options_ftp_user'] = 'Username';
 $txt['package_install_options_make_backups'] = 'Create Backup versions of replaced files with a tilde (~) on the end of their names.';
-$txt['package_install_options_make_full_backups'] = 'Create an entire backup (excluding smileys, avatars and attachments) of the SMF install.';
+$txt['package_install_options_make_full_backups'] = 'Create an entire backup (excluding smileys, avatars and attachments) of the Elkarte install.';
 
 $txt['package_ftp_necessary'] = 'FTP Information Required';
 $txt['package_ftp_why'] = 'Some of the files the package manager needs to modify are not writable.  This needs to be changed by logging into FTP and using it to chmod or create the files and directories.  Your FTP information may be temporarily cached for proper operation of the package manager. Note you can also do this manually using an FTP client - to view a list of the affected files please click <a href="#" onclick="%1$s">here</a>.';
@@ -153,7 +153,7 @@ $txt['package_ftp_server'] = 'FTP Server';
 $txt['package_ftp_port'] = 'Port';
 $txt['package_ftp_username'] = 'Username';
 $txt['package_ftp_password'] = 'Password';
-$txt['package_ftp_path'] = 'Local path to DIALOGO';
+$txt['package_ftp_path'] = 'Local path to ELKARTE';
 $txt['package_ftp_test'] = 'Test';
 $txt['package_ftp_test_connection'] = 'Test Connection';
 $txt['package_ftp_test_success'] = 'FTP connection established.';

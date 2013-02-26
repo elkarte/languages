@@ -27,7 +27,7 @@ $txt['admin_title'] = 'Forum Title';
 $txt['admin_url'] = 'Forum URL';
 $txt['cookie_name'] = 'Cookie name';
 $txt['admin_webmaster_email'] = 'Webmaster email address';
-$txt['boarddir'] = 'DIALOGO Directory';
+$txt['boarddir'] = 'ElkArte Directory';
 $txt['sourcesdir'] = 'Sources Directory';
 $txt['cachedir'] = 'Cache Directory';
 $txt['admin_news'] = 'Enable News';
@@ -36,8 +36,8 @@ $txt['admin_manage_members'] = 'Members';
 $txt['admin_main'] = 'Main';
 $txt['admin_config'] = 'Configuration';
 $txt['admin_version_check'] = 'Detailed version check';
-$txt['admin_smffile'] = 'DIALOGO File';
-$txt['admin_smfpackage'] = 'DIALOGO Package';
+$txt['admin_elkfile'] = 'ElkArte File';
+$txt['admin_elkpackage'] = 'ElkArte Package';
 $txt['admin_logoff'] = 'Admin End Session';
 $txt['admin_maintenance'] = 'Maintenance';
 $txt['admin_image_text'] = 'Show buttons as images instead of text';
@@ -48,7 +48,7 @@ $txt['admin_agreement_select_language'] = 'Language to edit';
 $txt['admin_agreement_select_language_change'] = 'Change';
 $txt['admin_delete_members'] = 'Delete Selected Members';
 $txt['admin_repair'] = 'Repair All boards and topics';
-$txt['admin_main_welcome'] = 'This is your &quot;%1$s&quot;.  From here, you can edit settings, maintain your forum, view logs, install packages, manage themes, and many other things.<div style="margin-top: 1ex;">If you have any trouble, please look at the &quot;Support &amp; Credits&quot; page.  If the information there doesn\'t help you, feel free to <a href="http://www.simplemachines.org/community/index.php" target="_blank" class="new_win">look to us for help</a> with the problem.</div>You may also find answers to your questions or problems by clicking the <img src="' . $settings['images_url'] . '/helptopics.png" alt="%2$s" title="%3$s" /> symbols for more information on the related functions.';
+$txt['admin_main_welcome'] = 'This is your &quot;%1$s&quot;.  From here, you can edit settings, maintain your forum, view logs, install packages, manage themes, and many other things.<br /><br />If you have any trouble, please look at the &quot;Support &amp; Credits&quot; page.  If the information there doesn\'t help you, feel free to <a href="http://www.elkarte.net/index.php" target="_blank" class="new_win">look to us for help</a> with the problem.<br />You may also find answers to your questions or problems by clicking the <img src="' . $settings['images_url'] . '/helptopics.png" alt="%2$s" title="%3$s" /> symbols for more information on the related functions.';
 $txt['admin_news_desc'] = 'Please place one news item per box. BBC tags, such as <span title="Are you bold?">[b]</span>, <span title="I tall icks!!">[i]</span> and <span title="Brackets are great, no?">[u]</span> are allowed in your news, as well as smileys. Clear a news item\'s text box to remove it.';
 $txt['administrators'] = 'Forum Administrators';
 $txt['admin_reserved_desc'] = 'Reserved names will keep members from registering certain usernames or using these words in their displayed names. Choose the options you wish to use from the bottom before submitting.';
@@ -105,15 +105,15 @@ $txt['attachment_file_size'] = 'File Size';
 $txt['attachmentdir_size_not_set'] = 'No maximum directory size is currently set';
 $txt['attachmentdir_files_not_set'] = 'No directory file limit is currently set';
 $txt['attachment_delete_admin'] = '[attachment deleted by admin]';
-$txt['live'] = 'Live from Simple Machines...';
+$txt['live'] = 'Latest Software Updates';
 $txt['remove_all'] = 'Clear Log';
 $txt['approve_new_members'] = 'Admin must approve all new members';
 $txt['agreement_not_writable'] = 'Warning - agreement.txt is not writable, any changes you make will NOT be saved.';
 
-$txt['version_check_desc'] = 'This shows you the versions of your installation\'s files versus those of the latest version. If any of these files are out of date, you should download and upgrade to the latest version at <a href="http://www.simplemachines.org/" target="_blank" class="new_win">www.simplemachines.org</a>.';
+$txt['version_check_desc'] = 'This shows you the versions of your installation\'s files versus those of the latest version. If any of these files are out of date, you should download and upgrade to the latest version at our <a href="https://github.com/elkarte/Elkarte//wiki/downloads" target="_blank" class="new_win">Github Elkarte Repository</a>.';
 $txt['version_check_more'] = '(more detailed)';
 
-$txt['lfyi'] = 'You are unable to connect to simplemachines.org\'s latest news file.';
+$txt['lfyi'] = 'You are unable to connect to elkarte\'s latest news file.';
 
 $txt['manage_calendar'] = 'Calendar';
 $txt['manage_search'] = 'Search';
@@ -143,7 +143,7 @@ $txt['security_wrong'] = 'Administration login attempt!' . "\n" . 'Referer: %1$s
 $txt['email_preview_warning'] = 'The preview is not 100% accurate. In order to preserve the functionality of the page only the basic html tags are represented';
 $txt['email_as_html'] = 'Send in HTML format.  (with this you can put normal HTML in the email.)';
 $txt['email_parsed_html'] = 'Add &lt;br /&gt;s and &amp;nbsp;s to this message.';
-$txt['email_variables'] = 'In this message you can use a few &quot;variables&quot;.  Click <a href="' . $scripturl . '?action=helpadmin;help=emailmembers" onclick="return reqOverlayDiv(this.href);" class="help">here</a> for more information.';
+$txt['email_variables'] = 'In this message you can use a few &quot;variables&quot;.  Click <a href="' . $scripturl . '?action=quickhelp;help=emailmembers" onclick="return reqOverlayDiv(this.href);" class="help">here</a> for more information.';
 $txt['email_force'] = 'Send this to members even if they have chosen not to receive announcements.';
 $txt['email_as_pms'] = 'Send this to these groups using personal messages.';
 $txt['email_continue'] = 'Continue';
@@ -239,6 +239,8 @@ $txt['admin_log'] = 'Administration Log';
 $txt['admin_log_desc'] = 'Lists administrative tasks that have been performed by admins of your forum.';
 $txt['moderation_log'] = 'Moderation Log';
 $txt['moderation_log_desc'] = 'Lists moderation activities that have been performed by moderators on your forum.';
+$txt['badbehavior_log'] = 'Bad Behavior Log';
+$txt['badbehavior_log_desc'] = 'Lists requests that were blocked or marked suspicious by bad behavior.  If verbose logging is on all HTTP requests are listed.';
 $txt['spider_log_desc'] = 'Review the entries related to search engine spider activity on your forum.';
 $txt['pruning_log_desc'] = 'Use these tools to prune older entries in the various logs.';
 
@@ -263,6 +265,10 @@ $txt['theme_current_settings'] = 'Current Theme';
 $txt['dvc_your'] = 'Your Version';
 $txt['dvc_current'] = 'Current Version';
 $txt['dvc_sources'] = 'Sources';
+$txt['dvc_admin'] = 'Admin';
+$txt['dvc_controllers'] = 'Controllers';
+$txt['dvc_database'] = 'Databases';
+$txt['dvc_subs'] = 'Subs';
 $txt['dvc_default'] = 'Default Templates';
 $txt['dvc_templates'] = 'Current Templates';
 $txt['dvc_languages'] = 'Language Files';
@@ -286,7 +292,6 @@ $txt['activated'] = 'Activated';
 $txt['not_activated'] = 'Not activated';
 $txt['primary'] = 'Primary';
 $txt['additional'] = 'Additional';
-$txt['messenger_address'] = 'Messenger Address';
 $txt['wild_cards_allowed'] = 'wildcard characters * and ? are allowed';
 $txt['search_for'] = 'Search for';
 $txt['search_match'] = 'Match';
@@ -297,8 +302,8 @@ $txt['confirm_delete_members'] = 'Are you sure you want to delete the selected m
 $txt['support_credits_title'] = 'Support and Credits';
 $txt['support_credits_info'] = 'Links to support for common issues, and version information to give if you have problems.';
 $txt['support_title'] = 'Support Information';
-$txt['support_versions_current'] = 'Current forum version';
-$txt['support_versions_forum'] = 'Forum version';
+$txt['support_versions_current'] = 'Current version';
+$txt['support_versions_forum'] = 'This version';
 $txt['support_versions_php'] = 'PHP version';
 $txt['support_versions_db'] = '%1$s version';
 $txt['support_versions_server'] = 'Server version';
@@ -306,8 +311,8 @@ $txt['support_versions_gd'] = 'GD version';
 $txt['support_versions_imagick'] = 'Imagick version';
 $txt['support_versions'] = 'Version Information';
 $txt['support_resources'] = 'Support Resources';
-$txt['support_resources_p1'] = 'Our <a href="%1$s">Online Manual</a> provides the main documentation for DIALOGO. The DIALOGO Online Manual has many documents to help answer support questions and explain <a href="%2$s">Features</a>, <a href="%3$s">Settings</a>, <a href="%4$s">Themes</a>, <a href="%5$s">Packages</a>, etc. The Online Manual documents each area of DIALOGO thoroughly and should answer most questions quickly.';
-$txt['support_resources_p2'] = 'If you can\'t find the answers to your questions in the Online Manual, you may want to search our <a href="%1$s">Support Community</a> or ask for assistance in either our <a href="%2$s">English</a> or one of our many <a href="%3$s">international support boards</a>. The DIALOGO Support Community can be used for <a href="%4$s">support</a>, <a href="%5$s">customization</a>, and many other things such as discussing DIALOGO, finding a host, and discussing administrative issues with other forum administrators.';
+$txt['support_resources_p1'] = 'Our <a href="%1$s">Documentation Wiki</a> provides the main documentation for ELKARTE. The ELKARTE Online Manual has many documents to help answer support questions and explain <a href="%2$s">Features</a>, <a href="%3$s">Settings</a>, <a href="%4$s">Themes</a>, <a href="%5$s">Packages</a>, etc. The Online Manual documents each area of ELKARTE thoroughly and should answer most questions quickly.';
+$txt['support_resources_p2'] = 'If you can\'t find the answers to your questions in the Documentation Wiki, you may want to search our <a href="%1$s">Support Community</a> or ask for assistance in our support boards. The ELKARTE Support Community can be used for <a href="%2$s">support</a>, <a href="%3$s">customization</a>, and many other things such as discussing ELKARTE, finding a host, and discussing administrative issues with other forum administrators.';
 
 $txt['support_latest'] = 'Common support &amp; issues';
 $txt['support_latest_fetch'] = 'Retrieving support information...';
@@ -315,7 +320,6 @@ $txt['support_latest_fetch'] = 'Retrieving support information...';
 $txt['edit_permissions_info'] = 'Change restrictions and available features, globally or in specific boards.';
 $txt['membergroups_members'] = 'Regular Members';
 $txt['membergroups_guests'] = 'Guests';
-$txt['membergroups_guests_na'] = 'n/a';
 $txt['membergroups_add_group'] = 'Add group';
 $txt['membergroups_permissions'] = 'Permissions';
 
@@ -420,7 +424,7 @@ $txt['max_image_width'] = 'Max display width of posted or attached images';
 $txt['max_image_height'] = 'Max display height of posted or attached images';
 
 $txt['automanage_attachments'] = 'Choose the method for the management of the attachment directories';
-$txt['attachments_normal'] = '(Manual) DIALOGO default behaviour';
+$txt['attachments_normal'] = '(Manual) ELKARTE default behaviour';
 $txt['attachments_auto_years'] = '(Auto) Subdivide by years';
 $txt['attachments_auto_months'] = '(Auto) Subdivide by years and months';
 $txt['attachments_auto_days'] = '(Auto) Subdivide by years, months and days';
@@ -436,7 +440,7 @@ $txt['basedirectory_for_attachments_warning'] = '<div class="smalltext">Please n
 $txt['attach_current_dir_warning'] = '<div class="smalltext">There seems to be a problem with this directory. <br />(<a href="' . $scripturl . '?action=admin;area=manageattachments;sa=attachpaths">Attempt to correct</a>)</div>';
 
 $txt['attachment_transfer'] = 'Transfer Attachments';
-$txt['attachment_transfer_desc'] = 'Transfer files betwen directories.';
+$txt['attachment_transfer_desc'] = 'Transfer files between directories.';
 $txt['attachment_transfer_select'] = 'Select directory';
 $txt['attachment_transfer_now'] = 'Transfer';
 $txt['attachment_transfer_from'] = 'Transfer files from';
@@ -452,8 +456,10 @@ $txt['attachments_transfered'] = '%1$d files were transfered to %2$s';
 $txt['attachments_not_transfered'] = '%1$d files were not transfered.';
 $txt['attachment_transfer_no_dir'] = 'Either the source directory or one of the target options were not selected.';
 $txt['attachment_transfer_same_dir'] = 'You cannot select the same directory as both the source and target.';
-$txt['attachment_transfer_progress'] = 'Please wait. Transfer in progess.';
+$txt['attachment_transfer_progress'] = 'Please wait. Transfer in progress.';
 
+$txt['avatar_settings'] = 'General avatar settings';
+$txt['avatar_default'] = 'Enable a default avatar for all users without their own avatar';
 $txt['mods_cat_avatars'] = 'Avatars';
 $txt['avatar_directory'] = 'Avatars directory';
 $txt['avatar_url'] = 'Avatars URL';
@@ -464,6 +470,9 @@ $txt['option_refuse'] = 'Refuse it';
 $txt['option_html_resize'] = 'Let the HTML resize it';
 $txt['option_js_resize'] = 'Resize it with JavaScript';
 $txt['option_download_and_resize'] = 'Download and resize it (requires GD module)';
+$txt['gravatar'] = 'Gravatars';
+$txt['gravatar_groups'] = 'Membergroups allowed to select a Gravatar';
+$txt['gravatar_rating'] = 'Gravatar Rating';
 $txt['avatar_max_width_upload'] = 'Maximum width of uploaded avatar';
 $txt['avatar_max_height_upload'] = 'Maximum height of uploaded avatar';
 $txt['avatar_resize_upload'] = 'Resize oversized large avatars';
@@ -527,7 +536,7 @@ $txt['logs'] = 'Logs';
 $txt['generate_reports'] = 'Reports';
 
 $txt['update_available'] = 'Update Available';
-$txt['update_message'] = 'You\'re using an outdated version of DIALOGO, which contains some bugs which have since been fixed.
+$txt['update_message'] = 'You\'re using an outdated version of ELKARTE, which contains some bugs which have since been fixed.
 	It is recommended that you <a href="#" id="update-link">update your forum</a> to the latest version as soon as possible. It only takes a minute!';
 
 $txt['manageposts'] = 'Posts and Topics';
@@ -614,7 +623,7 @@ $txt['phpinfo_defaultsettings'] = 'Default Settings';
 $txt['phpinfo_itemsettings'] = 'Settings';
 
 $txt['language_configuration'] = 'Languages';
-$txt['language_description'] = 'This section allows you to edit languages installed on your forum, download new ones from the Simple Machines website. You may also edit language-related settings here.';
+$txt['language_description'] = 'This section allows you to edit languages installed on your forum, download new ones from the Simple Machines (R) website. You may also edit language-related settings here.';
 $txt['language_edit'] = 'Edit Languages';
 $txt['language_add'] = 'Add Language';
 $txt['language_settings'] = 'Settings';
@@ -658,6 +667,7 @@ $txt['core_settings_desc'] = 'This page allows you to turn on or off optional fe
 $txt['mods_cat_features'] = 'General';
 $txt['mods_cat_security_general'] = 'General';
 $txt['antispam_title'] = 'Anti-Spam';
+$txt['badbehavior_title'] = 'Bad-Behavior';
 $txt['mods_cat_modifications_misc'] = 'Miscellaneous';
 $txt['mods_cat_layout'] = 'Layout';
 $txt['karma'] = 'Karma';
@@ -668,7 +678,7 @@ $txt['pruning_title'] = 'Log Pruning';
 
 $txt['core_settings_activation_message'] = 'The feature {core_feature} has been activated, click on the title to configure it';
 $txt['core_settings_deactivation_message'] = 'The feature {core_feature} has been deactivated';
-$txt['core_settings_generic_error'] = 'An unforeseen error occurred, please relod the page and try again';
+$txt['core_settings_generic_error'] = 'An unforeseen error occurred, please reload the page and try again';
 
 $txt['boardsEdit'] = 'Modify Boards';
 $txt['mboards_new_cat'] = 'Create new category';
@@ -695,7 +705,7 @@ $txt['browse_packages'] = 'Browse Packages';
 $txt['download_packages'] = 'Download Packages';
 $txt['installed_packages'] = 'Installed Packages';
 $txt['package_file_perms'] = 'File Permissions';
-$txt['package_settings'] = 'Options';
+$txt['package_settings'] = 'Settings';
 $txt['themeadmin_admin_title'] = 'Manage and Install';
 $txt['themeadmin_list_title'] = 'Theme Settings';
 $txt['themeadmin_reset_title'] = 'Member Options';
@@ -720,7 +730,7 @@ $txt['hooks_field_hook_exists'] = 'Status';
 $txt['hooks_active'] = 'Exists';
 $txt['hooks_disabled'] = 'Disabled';
 $txt['hooks_missing'] = 'Not found';
-$txt['hooks_no_hooks'] = 'There are currenty no hooks in the system.';
+$txt['hooks_no_hooks'] = 'There are currently no hooks in the system.';
 $txt['hooks_button_remove'] = 'Remove';
 $txt['hooks_disable_instructions'] = 'Click on the status icon to enable or disable the hook';
 $txt['hooks_disable_legend'] = 'Legend';
