@@ -115,7 +115,7 @@ $txt['errortype_general_desc'] = 'General errors that have not been categorized 
 $txt['errortype_critical'] = '<span style="color:red;">Critical</span>';
 $txt['errortype_critical_desc'] = 'Critical errors.  These should be taken care of as quickly as possible.  Ignoring these errors can result in your forum failing and possibly security issues';
 $txt['errortype_database'] = 'Database';
-$txt['errortype_database_desc'] = 'Errors caused by faulty queries.  These should be looked at and reported to the Dialogo team.';
+$txt['errortype_database_desc'] = 'Errors caused by faulty queries.  These should be looked at and reported to the Elkarte team.';
 $txt['errortype_undefined_vars'] = 'Undefined';
 $txt['errortype_undefined_vars_desc'] = 'Errors caused by the use of undefined variables, indexes, or offsets.';
 $txt['errortype_template'] = 'Template';
@@ -171,25 +171,6 @@ $txt['maintain_members_all'] = 'All Membergroups';
 $txt['maintain_members_choose'] = 'Selected Groups';
 $txt['maintain_members_confirm'] = 'Are you sure you really want to delete these member accounts?\\n\\nThis cannot be undone!';
 
-$txt['utf8_title'] = 'Convert the database and data to UTF-8';
-$txt['utf8_introduction'] = 'UTF-8 is an international character set covering nearly all languages around the world. Converting your database and data to UTF-8 can make it easier to support multiple languages on the same board. It also can enhance search and sorting capabilities for languages with non-latin characters.';
-$txt['utf8_warning'] = 'If you want to convert your data and database to UTF-8, be aware of the following:
-<ul class="normallist">
-	<li>Converting character sets might be <em>harmful</em> for your data. Make sure you have backed up your database <em>before</em> converting.</li>
-	<li>Because UTF-8 is a richer character set than most other character sets, there\'s no way back, unless by restoring your database to before the conversion.</li>
-	<li>After converting your data and database to UTF-8, you will need UTF-8 compatible language files.</li>
-</ul>';
-$txt['utf8_charset_not_supported'] = 'Conversion from %1$s to UTF-8 is not supported.';
-$txt['utf8_detected_charset'] = 'Based on your default language file (\'%1$s\'), the character set of your data would most likely be \'%2$s\'.';
-$txt['utf8_already_utf8'] = 'Your database and data already seem to be configured as UTF-8 data. No conversion is needed.';
-$txt['utf8_source_charset'] = 'Data character set';
-$txt['utf8_proceed'] = 'Proceed';
-$txt['utf8_database_charset'] = 'Database character set';
-$txt['utf8_target_charset'] = 'Convert data and database to';
-$txt['utf8_utf8'] = 'UTF-8';
-$txt['utf8_db_version_too_low'] = 'The version of MySQL that your database server is using is not high enough to support UTF-8 properly. A minimum version of 4.1.2 is required.';
-$txt['utf8_cannot_convert_fulltext'] = 'Your messages table is using a fulltext index for use when searching.  You cannot proceed in converting to UTF-8 until that index is removed. You can re-create it after the conversion has been completed.';
-
 $txt['text_title'] = 'Convert to TEXT';
 $txt['mediumtext_title'] = 'Convert to MEDIUMTEXT';
 $txt['mediumtext_introduction'] = 'The default messages table can contain posts up to a size of 65535 characters, in order be able to store bigger texts the column must be converted to "MEDIUMTEXT". It is also possible to revert the column back to TEXT (that operation would reduce the space occupied), but <strong>only if</strong> none of the posts in your database exceed the size of 65535 characters. This condition will be verified before the conversion.';
@@ -198,11 +179,7 @@ $txt['exceeding_messages'] = 'The following messages are longer than 65535 chara
 $txt['exceeding_messages_morethan'] = 'And other %1$d';
 $txt['convert_to_text'] = 'No messages are longer than 65535 characters. You can safely proceed with the conversion without losing any part of the text.';
 $txt['convert_to_suggest_text'] = 'The messages body column in your database is currently set as MEDIUMTEXT, but the maximum allowed length set for the messages is lower than 65535 characters. You may free some space converting the column to TEXT.';
-
-$txt['entity_convert_title'] = 'Convert HTML-entities to UTF-8 characters';
-$txt['entity_convert_only_utf8'] = 'The database needs to be in UTF-8 format before HTML-entities can be converted to UTF-8';
-$txt['entity_convert_introduction'] = 'This function will convert all characters that are stored in the database as HTML-entities to UTF-8 characters. This is especially useful when you have just converted your forum from a character set like ISO-8859-1 while non-latin characters were used on the forum. The browser then sends all characters as HTML-entities. For example, the HTML-entity &amp;#945; represents the greek letter &#945; (alpha). Converting entities to UTF-8 will improve searching and sorting of text and reduce storage size.';
-$txt['entity_convert_proceed'] = 'Proceed';
+$txt['convert_proceed'] = 'Proceed';
 
 // Move topics out.
 $txt['move_topics_maintenance'] = 'Move Topics';

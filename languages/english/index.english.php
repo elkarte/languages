@@ -13,7 +13,7 @@ $txt['lang_dictionary'] = 'en';
 $txt['lang_spelling'] = 'american';
 
 // Ensure you remember to use uppercase for character set strings.
-$txt['lang_character_set'] = 'ISO-8859-1';
+$txt['lang_character_set'] = 'UTF-8';
 // Character set and right to left?
 $txt['lang_rtl'] = false;
 // Capitalize day and month names?
@@ -115,7 +115,7 @@ $txt['first_post'] = 'First post';
 $txt['last_poster'] = 'Last post by';
 //$txt['last_post_message'] = '<strong>Last post</strong> by %1$s<br />in %2$s<br />on %3$s';
 $txt['last_post_message'] = '<strong>Last post: </strong>%3$s<br />%2$s by %1$s';
-$txt['boardindex_total_posts'] = '%1$d Posts in %2$d Topics by %3$d Members';
+$txt['boardindex_total_posts'] = '%1$s Posts in %2$d Topics by %3$d Members';
 $txt['show'] = 'Show';
 $txt['hide'] = 'Hide';
 
@@ -212,6 +212,7 @@ $txt['welcome_guest_register'] = 'Welcome to <strong>'. $context['forum_name']. 
 $txt['please_login'] = 'Please <a href="' . $scripturl . '?action=login">login</a>.';
 $txt['login_or_register'] = 'Please <a href="' . $scripturl . '?action=login">login</a> or <a href="' . $scripturl . '?action=register">register</a>.';
 $txt['welcome_guest_activate'] = '<br />Did you miss your <a href="' . $scripturl . '?action=activate">activation email</a>?';
+// @todo the following to sprintf
 $txt['hello_member'] = 'Hey,';
 // Use numeric entities in the below string.
 $txt['hello_guest'] = 'Welcome,';
@@ -331,17 +332,6 @@ $txt['newest_member'] = ', our newest member.'; //Deprecated
 $txt['search_for'] = 'Search for';
 $txt['search_match'] = 'Match';
 
-$txt['aim'] = 'AIM';
-// In this string, please use +'s for spaces.
-$txt['aim_default_message'] = 'Hi.+Are+you+there?';
-$txt['aim_title'] = 'AOL Instant Messenger';
-$txt['icq'] = 'ICQ';
-$txt['icq_title'] = 'ICQ Messenger';
-$txt['msn'] = 'MSN';
-$txt['msn_title'] = 'MSN Messenger';
-$txt['yim'] = 'YIM';
-$txt['yim_title'] = 'Yahoo Instant Messenger';
-
 $txt['maintain_mode_on'] = 'Remember, this forum is in \'Maintenance Mode\'.';
 
 $txt['read'] = 'Read'; //Deprecated
@@ -366,13 +356,15 @@ $txt['total_boards'] = 'Total Boards';
 
 $txt['print_page'] = 'Print Page';
 $txt['print_page_text'] = 'Text only';
-$txt['print_page_images'] = 'Test with Images';
+$txt['print_page_images'] = 'Text with Images';
 
 $txt['valid_email'] = 'This must be a valid email address.';
 
 $txt['info_center_title'] = '%1$s - Info Center';
 
 $txt['send_topic'] = 'Send this topic';
+$txt['disregard'] = 'Disregard';
+$txt['undisregard'] = 'Stop disregarding';
 
 $txt['sendtopic_title'] = 'Send the topic &quot;%1$s&quot; to a friend.';
 $txt['sendtopic_sender_name'] = 'Your name';
@@ -391,14 +383,14 @@ $txt['try_again'] = 'Please try again.  If you come back to this error screen, r
 $txt['file'] = 'File';
 $txt['line'] = 'Line';
 // Use numeric entities in the below string.
-$txt['tried_to_repair'] = 'Dialogo has detected and automatically tried to repair an error in your database.  If you continue to have problems, or continue to receive these emails, please contact your host.';
+$txt['tried_to_repair'] = 'Elkarte has detected and automatically tried to repair an error in your database.  If you continue to have problems, or continue to receive these emails, please contact your host.';
 $txt['database_error_versions'] = '<strong>Note:</strong> It appears that your database <em>may</em> require an upgrade. Your forum\'s files are currently at version %1$s, while your database is at version %2$s. The above error might possibly go away if you execute the latest version of upgrade.php.';
 $txt['template_parse_error'] = 'Template Parse Error!';
 $txt['template_parse_error_message'] = 'It seems something has gone sour on the forum with the template system.  This problem should only be temporary, so please come back later and try again.  If you continue to see this message, please contact the administrator.<br /><br />You can also try <a href="javascript:location.reload();">refreshing this page</a>.';
 $txt['template_parse_error_details'] = 'There was a problem loading the <tt><strong>%1$s</strong></tt> template or language file.  Please check the syntax and try again - remember, single quotes (<tt>\'</tt>) often have to be escaped with a slash (<tt>\\</tt>).  To see more specific error information from PHP, try <a href="' . $boardurl . '%1$s">accessing the file directly</a>.<br /><br />You may want to try to <a href="javascript:location.reload();">refresh this page</a> or <a href="' . $scripturl . '?theme=1">use the default theme</a>.';
 
-$txt['today'] = '<strong>Today</strong> at ';
-$txt['yesterday'] = '<strong>Yesterday</strong> at ';
+$txt['today'] = 'Today at ';
+$txt['yesterday'] = 'Yesterday at ';
 $txt['new_poll'] = 'New poll';
 $txt['poll_question'] = 'Question';
 $txt['poll_vote'] = 'Submit Vote';
@@ -474,7 +466,7 @@ $txt['search_advanced'] = 'Advanced search';
 
 $txt['security_risk'] = 'MAJOR SECURITY RISK:';
 $txt['not_removed'] = 'You have not removed ';
-$txt['not_removed_extra'] = '%1$s is a backup of %2$s that was not generated by Dialogo. It can be accessed directly and used to gain unauthorised access to your forum. You should delete it immediately.';
+$txt['not_removed_extra'] = '%1$s is a backup of %2$s that was not generated by Elkarte. It can be accessed directly and used to gain unauthorised access to your forum. You should delete it immediately.';
 $txt['generic_warning'] = 'Warning';
 $txt['agreement_missing'] = 'You are requiring new users to accept a registration agreement, however the file (agreement.txt) doesn\'t exist.';
 
@@ -498,8 +490,7 @@ $txt['status'] = 'Status';
 $txt['go_up'] = 'Go Up';
 $txt['go_down'] = 'Go Down';
 
-$forum_copyright = '<a href="' . $scripturl . '?action=credits" title="Dialogo Forum" target="_blank" class="new_win">%1$s</a> |
- <a href="http://www.dialogoforum.org/about/license.php" title="License" target="_blank" class="new_win">Dialogo &copy; 2012</a>';
+$forum_copyright = '<a href="' . $scripturl . '?action=who;sa=credits" title="Elkarte Forum" target="_blank" class="new_win">%1$s</a> | <a href="https://github.com/elkarte/Elkarte/blob/master/license.md" title="License" target="_blank" class="new_win">Elkarte &copy; 2013</a>';
 
 $txt['birthdays'] = 'Birthdays:';
 $txt['events'] = 'Events:';
@@ -556,7 +547,6 @@ $txt['mlist_search'] = 'Search For Members';
 $txt['mlist_search_again'] = 'Search again';
 $txt['mlist_search_filter'] = 'Search Options';
 $txt['mlist_search_email'] = 'Search by email address';
-$txt['mlist_search_messenger'] = 'Search by messenger nickname';
 $txt['mlist_search_group'] = 'Search by position';
 $txt['mlist_search_name'] = 'Search by name';
 $txt['mlist_search_website'] = 'Search by website';
@@ -564,9 +554,8 @@ $txt['mlist_search_results'] = 'Search results for';
 $txt['mlist_search_by'] = 'Search by %1$s';
 $txt['mlist_menu_view'] = 'View the memberlist';
 
-$txt['attach_downloaded'] = 'downloaded';
-$txt['attach_viewed'] = 'viewed';
-$txt['attach_times'] = 'times';
+$txt['attach_downloaded'] = 'downloaded %1$d times';
+$txt['attach_viewed'] = 'viewed %1$d times';
 
 $txt['settings'] = 'Settings';
 $txt['never'] = 'Never';
@@ -805,6 +794,9 @@ $txt['prompt_text_img'] = 'Enter image location';
 
 // Escape any single quotes in here twice.. 'it\'s' -> 'it\\\'s'.
 $txt['autosuggest_delete_item'] = 'Delete Item';
+
+// Bad Behavior
+$txt['badbehavior_blocked'] = '<a href="http://www.bad-behavior.ioerror.us/">Bad Behavior</a> has blocked %1$s access attempts in the last 7 days.';
 
 // Debug related - when $db_show_debug is true.
 $txt['debug_templates'] = 'Templates: ';

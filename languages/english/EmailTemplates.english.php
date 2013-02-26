@@ -298,7 +298,7 @@ Unsubscribe to new topics from this board by using this link:
 
 /**
 	@additional_params: request_membership
-		RECPNAME: The name of the person recieving the email
+		RECPNAME: The name of the person receiving the email
 		APPYNAME: The name of the person applying for group membership
 		GROUPNAME: The name of the group being applied to.
 		REASON: The reason given by the applicant for wanting to join the group.
@@ -968,7 +968,7 @@ Reply to this Personal Message here: {REPLYLINK}';
 	@description: A notification email sent to the receivers of a personal message
 */
 $txt['new_pm_tolist_subject'] = 'New Personal Message: {SUBJECT}';
-$txt['new_pm_tolist_body'] = 'You and {TOLIST} have just been sent a personal message by {SENDER} on {FORUMNAME}
+$txt['new_pm_tolist_body'] = '{TOLIST} have just been sent a personal message by {SENDER} on {FORUMNAME}
 
 IMPORTANT: Remember, this is just a notification. Please do not reply to this email.
 
@@ -986,7 +986,7 @@ Reply to this Personal Message (to the sender only) here: {REPLYLINK}';
 	@description: A notification email sent to the receivers of a personal message
 */
 $txt['new_pm_body_tolist_subject'] = 'New Personal Message: {SUBJECT}';
-$txt['new_pm_body_tolist_body'] = 'You and {TOLIST} have just been sent a personal message by {SENDER} on {FORUMNAME}
+$txt['new_pm_body_tolist_body'] = '{TOLIST} have just been sent a personal message by {SENDER} on {FORUMNAME}
 
 IMPORTANT: Remember, this is just a notification. Please do not reply to this email.
 

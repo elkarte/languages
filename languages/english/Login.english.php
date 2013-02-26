@@ -24,7 +24,7 @@ $txt['now_a_member'] = 'Success! You are now a member of the forum.';
 $txt['your_password'] = 'and your password is';
 $txt['valid_email_needed'] = 'Please enter a valid email address, %1$s.';
 $txt['required_info'] = 'Required Information';
-$txt['identification_by_dialogo'] = 'Used to identify you on the forum.';
+$txt['identification_by_elkarte'] = 'Used to identify you on the forum.';
 $txt['additional_information'] = 'Additional Information';
 $txt['warning'] = 'Warning!';
 $txt['only_members_can_access'] = 'Only registered members are allowed to access this section.';
@@ -153,6 +153,6 @@ $txt['authenticate_openid_url'] = 'OpenID Authentication URL';
 // Contact form
 $txt['admin_contact_form'] = 'Contact the admins';
 $txt['contact_your_message'] = 'Your message';
-$txt['errors_contact_form'] = 'The following errors occured while processing your contact request';
+$txt['errors_contact_form'] = 'The following errors occurred while processing your contact request';
 $txt['contact_subject'] = 'A guest has sent you a message';
 $txt['contact_thankyou'] = 'Thank you for your message, someone will contact you as soon as possible.';
