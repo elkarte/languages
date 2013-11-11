@@ -6,6 +6,10 @@ global $settings, $scripturl;
 $txt['admin_boards'] = 'Boards';
 $txt['admin_users'] = 'Members';
 $txt['admin_newsletters'] = 'Newsletters';
+$txt['include_these'] = 'Members to include';
+$txt['exclude_these'] = 'Members to exclude';
+$txt['admin_newsletters_select_groups'] = 'Groups to receive';
+$txt['admin_newsletters_exclude_groups'] = 'Groups to exclude';
 $txt['admin_edit_news'] = 'News';
 $txt['admin_groups'] = 'Membergroups';
 $txt['admin_members'] = 'Manage Members';
@@ -16,7 +20,7 @@ $txt['admin_censored_where'] = 'Put the word to be censored on the left, and wha
 $txt['admin_censored_desc'] = 'Due to the public nature of forums there may be some words that you wish to prohibit being posted by users of your forum. You can enter any words below that you wish to be censored whenever used by a member.<br />Clear a box to remove that word from the censor.';
 $txt['admin_reserved_names'] = 'Reserved Names';
 $txt['admin_template_edit'] = 'Edit your forum template';
-$txt['admin_modifications'] = 'Modification Settings';
+$txt['admin_modifications'] = 'Addon Settings';
 $txt['admin_security_moderation'] = 'Security and Moderation';
 $txt['admin_server_settings'] = 'Server Settings';
 $txt['admin_reserved_set'] = 'Set reserved names';
@@ -106,14 +110,15 @@ $txt['attachmentdir_size_not_set'] = 'No maximum directory size is currently set
 $txt['attachmentdir_files_not_set'] = 'No directory file limit is currently set';
 $txt['attachment_delete_admin'] = '[attachment deleted by admin]';
 $txt['live'] = 'Latest Software Updates';
+$txt['try_searching'] = 'Don\'t you know where a setting is? Try searching the admin area!';
 $txt['remove_all'] = 'Clear Log';
 $txt['approve_new_members'] = 'Admin must approve all new members';
 $txt['agreement_not_writable'] = 'Warning - agreement.txt is not writable, any changes you make will NOT be saved.';
 
-$txt['version_check_desc'] = 'This shows you the versions of your installation\'s files versus those of the latest version. If any of these files are out of date, you should download and upgrade to the latest version at our <a href="https://github.com/elkarte/Elkarte//wiki/downloads" target="_blank" class="new_win">Github Elkarte Repository</a>.';
+$txt['version_check_desc'] = 'This shows you the versions of your installation\'s files versus those of the latest version. If any of these files are out of date, you should download and upgrade to the latest version at our <a href="https://github.com/elkarte/Elkarte//wiki/downloads" target="_blank" class="new_win">ElkArte Site</a>.';
 $txt['version_check_more'] = '(more detailed)';
 
-$txt['lfyi'] = 'You are unable to connect to elkarte\'s latest news file.';
+$txt['lfyi'] = 'You are unable to connect to ElkArte\'s latest news file.';
 
 $txt['manage_calendar'] = 'Calendar';
 $txt['manage_search'] = 'Search';
@@ -143,7 +148,7 @@ $txt['security_wrong'] = 'Administration login attempt!' . "\n" . 'Referer: %1$s
 $txt['email_preview_warning'] = 'The preview is not 100% accurate. In order to preserve the functionality of the page only the basic html tags are represented';
 $txt['email_as_html'] = 'Send in HTML format.  (with this you can put normal HTML in the email.)';
 $txt['email_parsed_html'] = 'Add &lt;br /&gt;s and &amp;nbsp;s to this message.';
-$txt['email_variables'] = 'In this message you can use a few &quot;variables&quot;.  Click <a href="' . $scripturl . '?action=quickhelp;help=emailmembers" onclick="return reqOverlayDiv(this.href);" class="help">here</a> for more information.';
+$txt['email_variables'] = 'In this message you can use a few &quot;variables&quot;.<a href="' . $scripturl . '?action=quickhelp;help=emailmembers" onclick="return reqOverlayDiv(this.href);" class="help"> Click here for more information</a>.';
 $txt['email_force'] = 'Send this to members even if they have chosen not to receive announcements.';
 $txt['email_as_pms'] = 'Send this to these groups using personal messages.';
 $txt['email_continue'] = 'Continue';
@@ -154,6 +159,7 @@ $txt['ban_ip'] = 'IP banning: (e.g. 192.168.12.213 or 128.0.*.*) - one entry per
 $txt['ban_email'] = 'Email banning: (e.g. badguy@somewhere.com) - one entry per line';
 $txt['ban_username'] = 'User name banning: (e.g. l33tuser) - one entry per line';
 
+$txt['ban_errors_detected'] = 'The following error or errors occurred while saving or editing the ban group or trigger';
 $txt['ban_description'] = 'Here you can ban troublesome people either by IP, hostname, username, or email.';
 $txt['ban_add_new'] = 'Add new ban';
 $txt['ban_banned_entity'] = 'Banned entity';
@@ -260,6 +266,7 @@ $txt['errlog_desc'] = 'The error log tracks every error encountered by your foru
 $txt['errlog_no_entries'] = 'There are currently no error log entries.';
 
 $txt['theme_settings'] = 'Theme Settings';
+$txt['theme_edit_settings'] = 'Edit this theme\'s settings';
 $txt['theme_current_settings'] = 'Current Theme';
 
 $txt['dvc_your'] = 'Your Version';
@@ -290,6 +297,7 @@ $txt['age'] = 'User age';
 $txt['activation_status'] = 'Activation Status';
 $txt['activated'] = 'Activated';
 $txt['not_activated'] = 'Not activated';
+$txt['is_banned'] = 'Banned';
 $txt['primary'] = 'Primary';
 $txt['additional'] = 'Additional';
 $txt['wild_cards_allowed'] = 'wildcard characters * and ? are allowed';
@@ -311,8 +319,8 @@ $txt['support_versions_gd'] = 'GD version';
 $txt['support_versions_imagick'] = 'Imagick version';
 $txt['support_versions'] = 'Version Information';
 $txt['support_resources'] = 'Support Resources';
-$txt['support_resources_p1'] = 'Our <a href="%1$s">Documentation Wiki</a> provides the main documentation for ELKARTE. The ELKARTE Online Manual has many documents to help answer support questions and explain <a href="%2$s">Features</a>, <a href="%3$s">Settings</a>, <a href="%4$s">Themes</a>, <a href="%5$s">Packages</a>, etc. The Online Manual documents each area of ELKARTE thoroughly and should answer most questions quickly.';
-$txt['support_resources_p2'] = 'If you can\'t find the answers to your questions in the Documentation Wiki, you may want to search our <a href="%1$s">Support Community</a> or ask for assistance in our support boards. The ELKARTE Support Community can be used for <a href="%2$s">support</a>, <a href="%3$s">customization</a>, and many other things such as discussing ELKARTE, finding a host, and discussing administrative issues with other forum administrators.';
+$txt['support_resources_p1'] = 'Our <a href="%1$s">Documentation Wiki</a> provides the main documentation for ElkArte. The ElkArte Online Manual has many documents to help answer support questions and explain <a href="%2$s">Features</a>, <a href="%3$s">Settings</a>, <a href="%4$s">Themes</a>, <a href="%5$s">Packages</a>, etc. The Online Manual documents each area of ElkArte thoroughly and should answer most questions quickly.';
+$txt['support_resources_p2'] = 'If you can\'t find the answers to your questions in the Documentation Wiki, you may want to search our <a href="%1$s">Support Community</a> or ask for assistance in our support boards. The ElkArte Support Community can be used for <a href="%2$s">support</a>, <a href="%3$s">customization</a>, and many other things such as discussing ElkArte, finding a host, and discussing administrative issues with other forum administrators.';
 
 $txt['support_latest'] = 'Common support &amp; issues';
 $txt['support_latest_fetch'] = 'Retrieving support information...';
@@ -424,7 +432,7 @@ $txt['max_image_width'] = 'Max display width of posted or attached images';
 $txt['max_image_height'] = 'Max display height of posted or attached images';
 
 $txt['automanage_attachments'] = 'Choose the method for the management of the attachment directories';
-$txt['attachments_normal'] = '(Manual) ELKARTE default behaviour';
+$txt['attachments_normal'] = '(Manual) ElkArte default behaviour';
 $txt['attachments_auto_years'] = '(Auto) Subdivide by years';
 $txt['attachments_auto_months'] = '(Auto) Subdivide by years and months';
 $txt['attachments_auto_days'] = '(Auto) Subdivide by years, months and days';
@@ -520,11 +528,13 @@ $txt['news_title'] = 'News and Newsletters';
 $txt['news_settings_desc'] = 'Here you can change the settings and permissions related to news and newsletters.';
 $txt['news_settings_submit'] = 'Save';
 $txt['news_mailing_desc'] = 'From this menu you can send messages to all members who\'ve registered and entered their email addresses. You may edit the distribution list, or send messages to all. Useful for important update/news information.';
-$txt['news_error_no_news'] = 'Nothing written';
+$txt['news_error_no_news'] = 'Nothing to preview';
 $txt['groups_edit_news'] = 'Groups allowed to edit news items';
 $txt['groups_send_mail'] = 'Groups allowed to send out forum newsletters';
 $txt['xmlnews_enable'] = 'Enable XML/RSS news';
 $txt['xmlnews_maxlen'] = 'Maximum message length';
+$txt['xmlnews_limit'] = 'XML/RSS Limit';
+$txt['xmlnews_limit_note'] = 'Number of items in a news feed';
 $txt['xmlnews_maxlen_note'] = '(0 to disable, bad idea.)';
 $txt['editnews_clickadd'] = 'Add another item';
 $txt['editnews_remove_selected'] = 'Remove selected';
@@ -536,7 +546,7 @@ $txt['logs'] = 'Logs';
 $txt['generate_reports'] = 'Reports';
 
 $txt['update_available'] = 'Update Available';
-$txt['update_message'] = 'You\'re using an outdated version of ELKARTE, which contains some bugs which have since been fixed.
+$txt['update_message'] = 'You\'re using an outdated version of ElkArte, which contains some bugs which have since been fixed.
 	It is recommended that you <a href="#" id="update-link">update your forum</a> to the latest version as soon as possible. It only takes a minute!';
 
 $txt['manageposts'] = 'Posts and Topics';
@@ -568,11 +578,19 @@ $txt['managedrafts_settings_description'] = 'Here you can set all settings invol
 $txt['managedrafts_submit'] = 'Save';
 $txt['manage_drafts'] = 'Drafts';
 
+$txt['mail_center'] = 'Maillist Center';
+$txt['mm_emailerror'] = 'Failed Emails';
+$txt['mm_emailfilters'] = 'Filters';
+$txt['mm_emailparsers'] = 'Parsers';
+$txt['mm_emailtemplates'] = 'Templates';
+$txt['mm_emailsettings'] = 'Settings';
+
 $txt['removeNestedQuotes'] = 'Remove nested quotes when quoting';
 $txt['enableEmbeddedFlash'] = 'Embed flash into posts';
 $txt['enableEmbeddedFlash_warning'] = 'may be a security risk!';
 $txt['enableSpellChecking'] = 'Enable spell checking';
 $txt['enableSpellChecking_warning'] = 'this does not work on all servers.';
+$txt['enableVideoEmbeding'] = 'Enable auto-embedding of video links.';
 $txt['disable_wysiwyg'] = 'Disable WYSIWYG editor';
 $txt['max_messageLength'] = 'Maximum allowed post size';
 $txt['max_messageLength_zero'] = '0 for no max.';
@@ -596,6 +614,7 @@ $txt['bbcTagsToUse_select_all'] = 'Select all tags';
 
 $txt['enableStickyTopics'] = 'Enable sticky topics';
 $txt['enableParticipation'] = 'Enable participation icons';
+$txt['enableFollowup'] = 'Enable followups';
 $txt['oldTopicDays'] = 'Time before topic is warned as old on reply';
 $txt['oldTopicDays_zero'] = '0 to disable';
 $txt['defaultMaxTopics'] = 'Number of topics per page in the message index';
@@ -603,6 +622,7 @@ $txt['defaultMaxMessages'] = 'Number of posts per page in a topic page';
 $txt['disable_print_topic'] = 'Disable print topic feature';
 $txt['hotTopicPosts'] = 'Number of posts for a hot topic';
 $txt['hotTopicVeryPosts'] = 'Number of posts for a very hot topic';
+$txt['useLikesNotViews'] = 'Use number of likes in place of posts to define hot topics';
 $txt['enableAllMessages'] = 'Max topic size to show &quot;All&quot; posts';
 $txt['enableAllMessages_zero'] = '0 to never show &quot;All&quot;';
 $txt['disableCustomPerPage'] = 'Disable user defined topic/message count per page';
@@ -623,7 +643,7 @@ $txt['phpinfo_defaultsettings'] = 'Default Settings';
 $txt['phpinfo_itemsettings'] = 'Settings';
 
 $txt['language_configuration'] = 'Languages';
-$txt['language_description'] = 'This section allows you to edit languages installed on your forum, download new ones from the Simple Machines (R) website. You may also edit language-related settings here.';
+$txt['language_description'] = 'This section allows you to edit languages installed on your forum, download new ones from the ElkArte site. You may also edit language-related settings here.';
 $txt['language_edit'] = 'Edit Languages';
 $txt['language_add'] = 'Add Language';
 $txt['language_settings'] = 'Settings';
@@ -671,6 +691,8 @@ $txt['badbehavior_title'] = 'Bad-Behavior';
 $txt['mods_cat_modifications_misc'] = 'Miscellaneous';
 $txt['mods_cat_layout'] = 'Layout';
 $txt['karma'] = 'Karma';
+$txt['likes'] = 'Likes';
+$txt['notification_settings_desc'] = 'Notifications allow members of your community to be notified when they are @mentioned in a post or if one of their posts is liked';
 $txt['moderation_settings_short'] = 'Moderation';
 $txt['signature_settings_short'] = 'Signatures';
 $txt['custom_profile_shorttitle'] = 'Profile Fields';
@@ -703,9 +725,11 @@ $txt['permissions_post_moderation'] = 'Post Moderation';
 
 $txt['browse_packages'] = 'Browse Packages';
 $txt['download_packages'] = 'Download Packages';
+$txt['upload_packages'] = 'Upload Package';
 $txt['installed_packages'] = 'Installed Packages';
 $txt['package_file_perms'] = 'File Permissions';
 $txt['package_settings'] = 'Settings';
+$txt['package_servers'] = 'Package Servers';
 $txt['themeadmin_admin_title'] = 'Manage and Install';
 $txt['themeadmin_list_title'] = 'Theme Settings';
 $txt['themeadmin_reset_title'] = 'Member Options';
@@ -743,3 +767,9 @@ $txt['board_perms_allow'] = 'Allow';
 $txt['board_perms_ignore'] = 'Ignore';
 $txt['board_perms_deny'] = 'Deny';
 $txt['all_boards_in_cat'] = 'All boards in this category';
+
+$txt['url'] = 'URL';
+$txt['words_sep'] = 'Words separator';
+
+$txt['admin_order_title'] = 'Ordering Error';
+$txt['admin_order_error'] = 'An unknown error occurred while processing your request';

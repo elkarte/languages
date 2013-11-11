@@ -1,5 +1,5 @@
 <?php
-// Version: 1.0; ManageMaintenance
+// Version: 1.0; Maintenance
 
 $txt['repair_zero_ids'] = 'Found topics and/or messages with topic or message IDs of 0.';
 $txt['repair_missing_topics'] = 'Message #%1$d is in non-existent topic #%2$d.';
@@ -115,7 +115,7 @@ $txt['errortype_general_desc'] = 'General errors that have not been categorized 
 $txt['errortype_critical'] = '<span style="color:red;">Critical</span>';
 $txt['errortype_critical_desc'] = 'Critical errors.  These should be taken care of as quickly as possible.  Ignoring these errors can result in your forum failing and possibly security issues';
 $txt['errortype_database'] = 'Database';
-$txt['errortype_database_desc'] = 'Errors caused by faulty queries.  These should be looked at and reported to the Elkarte team.';
+$txt['errortype_database_desc'] = 'Errors caused by faulty queries.  These should be looked at and reported to the ElkArte team.';
 $txt['errortype_undefined_vars'] = 'Undefined';
 $txt['errortype_undefined_vars_desc'] = 'Errors caused by the use of undefined variables, indexes, or offsets.';
 $txt['errortype_template'] = 'Template';
@@ -129,8 +129,8 @@ $txt['maintain_errors'] = 'Find and repair any errors';
 $txt['maintain_errors_info'] = 'If, for example, posts or topics are missing after a server crash, this function may help finding them again.';
 $txt['maintain_logs'] = 'Empty out unimportant logs';
 $txt['maintain_logs_info'] = 'This function will empty out all unimportant logs. This should be avoided unless something\'s wrong, but it doesn\'t hurt anything.';
-$txt['maintain_cache'] = 'Empty the file cache';
-$txt['maintain_cache_info'] = 'This function will empty out the file cache should you need it to be cleared.';
+$txt['maintain_cache'] = 'Empty the cache';
+$txt['maintain_cache_info'] = 'This function will empty the cache should you need it to be cleared.';
 $txt['maintain_optimize'] = 'Optimize all tables';
 $txt['maintain_optimize_info'] = 'This task allows you to optimize all tables. This will get rid of overhead, effectively making the tables smaller in size and your forum faster.';
 $txt['maintain_version'] = 'Check all files against current versions';
@@ -174,7 +174,7 @@ $txt['maintain_members_confirm'] = 'Are you sure you really want to delete these
 $txt['text_title'] = 'Convert to TEXT';
 $txt['mediumtext_title'] = 'Convert to MEDIUMTEXT';
 $txt['mediumtext_introduction'] = 'The default messages table can contain posts up to a size of 65535 characters, in order be able to store bigger texts the column must be converted to "MEDIUMTEXT". It is also possible to revert the column back to TEXT (that operation would reduce the space occupied), but <strong>only if</strong> none of the posts in your database exceed the size of 65535 characters. This condition will be verified before the conversion.';
-$txt['body_checking_introduction'] = 'This function will convert the column of your database that contains the text of the messages into a "TEXT" format (currently is "MEDIUMTEXT". This operation will allow to slightly reduce the amount of space occupied by each message (1 byte per message). If any message stored into the database is longer than 65535 characters it will be truncated and part of the text will be lost.';
+$txt['body_checking_introduction'] = 'This function will convert the column of your database that contains the text of the messages into a "TEXT" format (currently is "MEDIUMTEXT"). This operation will allow to slightly reduce the amount of space occupied by each message (1 byte per message). If any message stored into the database is longer than 65535 characters it will be truncated and part of the text will be lost.';
 $txt['exceeding_messages'] = 'The following messages are longer than 65535 characters and will be truncated by the process:';
 $txt['exceeding_messages_morethan'] = 'And other %1$d';
 $txt['convert_to_text'] = 'No messages are longer than 65535 characters. You can safely proceed with the conversion without losing any part of the text.';

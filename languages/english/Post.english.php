@@ -5,6 +5,7 @@ global $context;
 
 $txt['post_reply'] = 'Post reply';
 $txt['message_icon'] = 'Message icon';
+$txt['post_in_board'] = 'Post in the board';
 $txt['subject_not_filled'] = 'The subject field was not filled out. It is required.';
 $txt['message_body_not_filled'] = 'The message body was not filled out. It is required.';
 // Use numeric entities in the below string.
@@ -18,6 +19,8 @@ $txt['insert_email'] = 'Insert Email';
 $txt['bbc_code'] = 'Insert Code';
 // Escape any single quotes in here twice.. 'it\'s' -> 'it\\\'s'.
 $txt['bbc_quote'] = 'Insert Quote';
+$txt['bbc_spoiler'] = 'Insert Spoiler';
+$txt['bbc_footnote'] = 'Insert Footnote';
 $txt['list'] = 'Insert List';
 $txt['list_unordered'] = 'Insert unordered list';
 $txt['list_ordered'] = 'Insert ordered list';
@@ -100,7 +103,7 @@ $txt['restricted_filename'] = 'That is a restricted filename. Please try a diffe
 $txt['topic_locked_no_reply'] = 'Warning! This topic is currently/will be locked<br />Only admins and moderators can reply.';
 $txt['awaiting_approval'] = 'Awaiting approval';
 $txt['attachment_requires_approval'] = 'Note that any files attached will not be displayed until approved by a moderator.';
-$txt['error_temp_attachments'] = 'There are attachments found, which you have attached before but not posted. These attachments are now attached to this post. If you do not want to include them in this post, you can remove them <a href="#postAttachment">here</a>.';
+$txt['error_temp_attachments'] = 'There are attachments found, which you have attached before but not posted. These attachments are now attached to this post. If you do not want to include them in this post, <a href="#postAttachment">you can remove them here</a>.';
 // Use numeric entities in the below string.
 $txt['js_post_will_require_approval'] = 'Reminder: This post will not appear until approved by a moderator.';
 
@@ -180,8 +183,8 @@ $txt['digest_subject_daily'] = 'Daily Digest';
 $txt['digest_subject_weekly'] = 'Weekly Digest';
 $txt['digest_intro_daily'] = 'Below is a summary of all activity in your subscribed boards and topics at %1$s today. To unsubscribe please visit the link below.';
 $txt['digest_intro_weekly'] = 'Below is a summary of all activity in your subscribed boards and topics at %1$s this week. To unsubscribe please visit the link below.';
-$txt['digest_new_topics'] = 'The following topics have been started';
-$txt['digest_new_topics_line'] = '"%1$s" in "%2$s"';
+$txt['digest_new_topics'] = 'The following topics were started';
+$txt['digest_new_topics_line'] = '"%1$s" in the %2$s board';
 $txt['digest_new_replies'] = 'Replies have been made in the following topics';
 $txt['digest_new_replies_one'] = '1 reply in "%1$s"';
 $txt['digest_new_replies_many'] = '%1$d replies in "%2$s"';
@@ -196,7 +199,6 @@ $txt['digest_mod_act_split'] = '"%1$s" was split';
 
 $txt['attach_error_title'] = 'Error uploading attachments.';
 $txt['attach_warning'] = 'There was a problem during the uploading of <strong>%1$s</strong>.';
-$txt['attach_check_nag'] = 'Unable to continue due to incomplete data (%1$s).';
 $txt['attach_max_total_file_size'] = 'Sorry, you are out of attachment space. The total attachment size allowed per post is %1$s KB. Space remaining is %2$s kB.';
 $txt['attach_folder_warning'] = 'The attachments directory can not be located. Please notify an administrator of this problem.';
 $txt['attach_folder_admin_warning'] = 'The path to the attachments directory (%1$s) is incorrect. Please correct it in the attachment settings area of your admin panel.';
@@ -215,11 +217,11 @@ $txt['php_upload_error_4'] = 'No file was uploaded. This is a PHP related error.
 $txt['php_upload_error_6'] = 'Unable to save. Missing a temporary directory. Please contact your host if you are unable to correct this problem.';
 $txt['php_upload_error_7'] = 'Failed to write file to disk. This is a PHP related error. Please contact your host if this problem continues.';
 $txt['php_upload_error_8'] = 'A PHP extension stopped the file upload. This is a PHP related error. Please contact your host if this problem continues.';
-$txt['error_temp_attachments_new'] = 'There are attachments which you had previously attached but not posted. These attachments are still attached to this post. This post does need to be submitted before these attachments are either saved or removed. You can do that <a href="#postAttachment">here</a>';
-$txt['error_temp_attachments_found'] = 'The following attachments were found which you had previously attached to another post but not posted. It is advisable that you do not post until these are either removed or that post has been submitted.<br />Click %1$s to remove those attachments. Or %2$s to return to that post.%3$s';
-$txt['error_temp_attachments_lost'] = 'The following attachments were found which you had previously attached to another post but not posted.  It is advisable that you do not upload any more attachments until these are removed or that post has been submitted.<br />Click %1$s to remove these attachments.%2$s';
+$txt['error_temp_attachments_new'] = 'There are attachments which you had previously attached but not posted. These attachments are still attached to this post. This post does need to be submitted before these attachments are either saved or removed. You <a href="#postAttachment">can do that here</a>';
+$txt['error_temp_attachments_found'] = 'The following attachments were found which you had previously attached to another post but not posted. It is advisable that you do not post until these are either removed or that post has been submitted.<br />Click <a href="%1$s">here to remove </a>those attachments. Or <a href="%2$s">here to return to that post</a>.%3$s';
+$txt['error_temp_attachments_lost'] = 'The following attachments were found which you had previously attached to another post but not posted. It is advisable that you do not upload any more attachments until these are removed or that post has been submitted.<br />Click <a href="%1$s">here to remove these attachments</a>.%2$s';
 $txt['error_temp_attachments_gone'] = 'Those attachments have now been removed and you have been returned to the page you were previously on';
-$txt['error_temp_attachments_flushed'] = 'Please note that any files which had been previously attached but not posted, have now been removed.';
+$txt['error_temp_attachments_flushed'] = 'Please note that any files which had been previously attached, but not posted, have now been removed.';
 $txt['error_topic_already_announced'] = 'Please note that this topic has already been announced.';
 
 $txt['cant_access_upload_path'] = 'Cannot access attachments upload path!';
