@@ -1,7 +1,7 @@
 <?php
 // Version: 1.0; Themes
 
-$txt['themeadmin_explain'] = 'Themes are the different looks and feels of your forum.  These settings affect the selection of themes, and which themes guests and other members use.';
+$txt['themeadmin_explain'] = 'Themes are the different looks and feels of your forum. These settings affect the selection of themes, and which themes guests and other members use.';
 
 $txt['theme_allow'] = 'Allow members to select their own themes.';
 $txt['theme_guests'] = 'Overall forum default';
@@ -10,23 +10,24 @@ $txt['theme_reset'] = 'Reset everyone to';
 $txt['theme_nochange'] = 'No change';
 $txt['theme_forum_default'] = 'Forum Default';
 
-$txt['theme_remove'] = 'remove';
-$txt['theme_remove_confirm'] = 'Are you sure you want to permanently remove this theme?';
+$txt['theme_remove'] = 'Uninstall';
+$txt['theme_remove_confirm'] = 'Are you sure you want to uninstall this theme?';
 
 $txt['theme_install'] = 'Install a New Theme';
-$txt['theme_install_file'] = 'From a file';
+$txt['theme_install_file'] = 'From an archive (e.g. .zip, .tar.gz)';
 $txt['theme_install_dir'] = 'From a directory on the server';
 $txt['theme_install_error'] = 'That theme directory doesn\'t exist, or doesn\'t contain a theme.';
-$txt['theme_install_write_error'] = 'The Themes directory must be writable to continue.';
+$txt['theme_install_write_error'] = 'The themes directory must be writable to continue.';
 $txt['theme_install_go'] = 'Install';
-$txt['theme_install_new'] = 'Create a copy of Default named';
+$txt['theme_install_new'] = 'Create a copy of default theme named';
 $txt['theme_install_new_confirm'] = 'Are you sure you want to install this new theme?';
 $txt['theme_install_writable'] = 'Warning - you cannot create or install a new theme as your themes directory is not currently writable.';
+$txt['theme_install_general'] = 'The theme doesn\'t seem to be where it should, please double check the information you provided.';
 $txt['theme_installed'] = 'Installed Successfully';
 $txt['theme_installed_message'] = 'was installed successfully.';
 
 $txt['theme_latest'] = 'Latest and Greatest Themes';
-$txt['theme_latest_fetch'] = 'Fetching latest themes from www.simplemachines.org...';
+$txt['theme_latest_fetch'] = 'Fetching latest themes from www.elkarte.net...';
 
 $txt['theme_pick'] = 'Choose a theme...';
 $txt['theme_preview'] = 'Preview theme';
@@ -60,12 +61,28 @@ $txt['site_slogan_desc'] = 'Add your own text for a slogan here. It will replace
 $txt['forum_width'] = 'Forum width';
 $txt['forum_width_desc'] = 'Set the forum width. Examples: 950px, 80%, 1240px.';
 
-$txt['enable_random_news'] = 'Enable random news line in the forum header';
+$txt['enable_news'] = 'News line in the forum header';
+$txt['enable_news_off'] = 'Off';
+$txt['enable_news_random'] = 'Random';
+$txt['enable_news_fader'] = 'Fader';
+$txt['enable_news_desc'] = '<ul>
+	<li>
+		<strong>Off</strong>: no news shown
+	</li>
+	<li>
+		<strong>Random</strong>: one news shown chosen at random
+	</li>
+	<li>
+		<strong>Fader</strong>: all the news are displayed sequentially
+	</li>
+</ul>';
+
 $txt['show_group_key'] = 'Show group key on board index';
-$txt['additional_options_collapsable'] = 'Enable collapsible additional post options';
+$txt['additional_options_collapsible'] = 'Enable collapsible additional post options';
 $txt['message_index_preview'] = 'Show post previews on the message index';
-$txt['message_index_preview_first'] = 'When using post previews, Show the text of the first post';
-$txt['message_index_preview_first_desc'] = 'Leave un-checked to show the text of the last post instead';
+$txt['message_index_preview_off'] = 'Do not show the previews';
+$txt['message_index_preview_first'] = 'Show the text of the first post';
+$txt['message_index_preview_last'] = 'Show the text of the last post';
 $txt['allow_no_censored'] = 'Allow users to turn off word censoring';
 $txt['who_display_viewing'] = 'Show who is viewing the board index and posts';
 $txt['who_display_viewing_off'] = 'Don\'t show';
@@ -80,7 +97,6 @@ $txt['last_modification'] = 'Show last modification date on modified posts';
 $txt['user_avatars'] = 'Show user avatars in message view';
 $txt['user_text'] = 'Show personal text in message view';
 $txt['gender_images'] = 'Show gender images in message view';
-$txt['news_fader'] = 'Show news fader on board index';
 $txt['member_list_bar'] = 'Show members list bar on board index';
 $txt['current_pos_text_img'] = 'Show current position in forum as link instead of text';
 $txt['show_view_profile_button'] = 'Show view profile button under post';
@@ -145,3 +161,8 @@ $txt['themeadmin_edit_on_line'] = 'Beginning on line';
 $txt['themeadmin_edit_preview'] = 'Preview';
 $txt['themeadmin_selectable'] = 'Themes that the user is able to select';
 $txt['themeadmin_themelist_link'] = 'Show the list of themes';
+
+// Strings for the variants
+$txt['variant_light'] = 'ElkArte Light';
+$txt['variant_dark'] = 'ElkArte Dark';
+$txt['variant_basic'] = 'ElkArte Basic';

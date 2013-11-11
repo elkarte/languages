@@ -20,6 +20,9 @@ $txt['mboards_order_after'] = 'After ';
 $txt['mboards_order_inside'] = 'Inside ';
 $txt['mboards_order_first'] = 'In first place';
 
+$txt['mboards_board_moved'] = 'Successfully moved.';
+$txt['mboards_board_error'] = 'Failed to resolve move location.';
+
 $txt['mboards_new_board'] = 'Add Board';
 $txt['mboards_new_cat_name'] = 'New Category';
 $txt['mboards_add_cat_button'] = 'Add Category';
@@ -65,7 +68,7 @@ $txt['mboards_override_theme_desc'] = 'Use this board\'s theme even if the membe
 $txt['mboards_redirect'] = 'Redirect to a web address';
 $txt['mboards_redirect_desc'] = 'Enable this option to redirect anyone who clicks on this board to another web address.';
 $txt['mboards_redirect_url'] = 'Address to redirect users to';
-$txt['mboards_redirect_url_desc'] = 'For example: &quot;http://www.simplemachines.org&quot;.';
+$txt['mboards_redirect_url_desc'] = 'For example: &quot;http://www.elkarte.net&quot;.';
 $txt['mboards_redirect_reset'] = 'Reset redirect count';
 $txt['mboards_redirect_reset_desc'] = 'Selecting this will reset the redirection count for this board to zero.';
 $txt['mboards_current_redirects'] = 'Currently: %1$s';

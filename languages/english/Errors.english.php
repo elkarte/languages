@@ -3,12 +3,13 @@
 
 global $scripturl, $modSettings;
 
-$txt['no_access'] = 'You are not allowed to access this section';
+$txt['no_access'] = 'Sorry, we can\'t let you access this section. We can\'t even tell you if it exists. You\'re welcome to visit the main page and choose your way from there.';
 $txt['wireless_error_notyet'] = 'Sorry, this section isn\'t available for wireless users at this time.';
+$txt['not_guests'] = 'Sorry, this action is not available to guests.';
 
 $txt['mods_only'] = 'Only Moderators can use the direct remove function, please remove this message through the modify feature.';
-$txt['no_name'] = 'You didn\'t fill the name field out.  It is required.';
-$txt['no_email'] = 'You didn\'t fill the email field out.  It is required.';
+$txt['no_name'] = 'You didn\'t fill the name field out. We can\'t let you continue without a name, sorry.';
+$txt['no_email'] = 'You didn\'t fill the email field out. We can\'t let you continue without an email, sorry.';
 $txt['topic_locked'] = 'This topic is locked, you are not allowed to post or modify messages...';
 $txt['no_password'] = 'Password field empty';
 $txt['already_a_user'] = 'The username you tried to use already exists.';
@@ -27,7 +28,7 @@ $txt['not_approved_topic'] = 'This topic has not been approved yet.';
 $txt['email_in_use'] = 'That email address (%1$s) is being used by a registered member already. If you feel this is a mistake, go to the login page and use the password reminder with that address.';
 
 $txt['didnt_select_vote'] = 'You didn\'t select a vote option.';
-$txt['poll_error'] = 'Either that poll doesn\'t exist, the poll has been locked, or you tried to vote twice.';
+$txt['poll_error'] = 'Something isn\'t working, sorry: either that poll doesn\'t exist, the poll has been locked, or you tried to vote twice.';
 $txt['members_only'] = 'This option is only available to registered members.';
 $txt['locked_by_admin'] = 'This was locked by an administrator.  You cannot unlock it.';
 $txt['not_enough_posts_karma'] = 'Sorry, you don\'t have enough posts to modify karma - you need at least %1$d.';
@@ -105,10 +106,11 @@ $txt['cannot_poll_view'] = 'You are not allowed to view polls in this board.';
 $txt['cannot_poll_vote'] = 'Sorry, but you cannot vote in polls in this board.';
 $txt['cannot_post_attachment'] = 'You don\'t have permission to post attachments here.';
 $txt['cannot_post_new'] = 'Sorry, you cannot post new topics in this board.';
+$txt['cannot_post_new_board'] = 'Sorry, you cannot post new topics in the board %1$s.';
 $txt['cannot_post_reply_any'] = 'You are not permitted to post replies to topics on this board.';
 $txt['cannot_post_reply_own'] = 'You are not allowed to post replies even to your own topics in this board.';
 $txt['cannot_profile_remove_own'] = 'Sorry, but you aren\'t allowed to delete your own account.';
-$txt['cannot_profile_remove_any'] = 'You don\'t have the approriate permissions to remove accounts.';
+$txt['cannot_profile_remove_any'] = 'You don\'t have the appropriate permissions to remove accounts.';
 $txt['cannot_profile_extra_any'] = 'You are not permitted to modify profile settings.';
 $txt['cannot_profile_identity_any'] = 'You aren\'t allowed to edit account settings.';
 $txt['cannot_profile_title_any'] = 'You cannot edit people\'s custom titles.';
@@ -120,9 +122,9 @@ $txt['cannot_profile_upload_avatar'] = 'You do not have permission to upload an 
 $txt['cannot_profile_remote_avatar'] = 'You don\'t have the privilege of using a remote avatar.';
 $txt['cannot_profile_view_own'] = 'Many apologies, but you can\'t view your own profile.';
 $txt['cannot_profile_view_any'] = 'Many apologies, but you can\'t view just any profile.';
-$txt['cannot_delete_own'] = 'You are not, on this board, allowed to delete your own posts.';
+$txt['cannot_delete_own'] = 'Ouch, sorry, you cannot delete your posts on this board.';
 $txt['cannot_delete_replies'] = 'Sorry, but you cannot remove these posts, even though they are replies to your topic.';
-$txt['cannot_delete_any'] = 'Deleting just any posts in this board is not allowed.';
+$txt['cannot_delete_any'] = 'Ouch, sorry, you cannot delete posts in this board.';
 $txt['cannot_report_any'] = 'You are not allowed to report posts in this board.';
 $txt['cannot_search_posts'] = 'You are not allowed to search for posts in this forum.';
 $txt['cannot_send_mail'] = 'You don\'t have the privilege of sending out emails to everyone.';
@@ -135,7 +137,7 @@ $txt['cannot_view_mlist'] = 'You can\'t view the memberlist because you don\'t h
 $txt['cannot_view_stats'] = 'You aren\'t allowed to view the forum statistics.';
 $txt['cannot_who_view'] = 'Sorry - you don\'t have the proper permissions to view the Who\'s Online list.';
 
-$txt['no_theme'] = 'That theme does not exist.';
+$txt['no_theme'] = ' We can\'t find that theme.';
 $txt['theme_dir_wrong'] = 'The default theme\'s directory is wrong, please correct it by clicking this text.';
 $txt['registration_disabled'] = 'Sorry, registration is currently disabled.';
 $txt['registration_agreement_missing'] = 'The registration agreement file, agreement.txt, is either missing or empty.  Registrations have been disable until this is fixed';
@@ -173,7 +175,7 @@ $txt['invalid_days_numb'] = 'Invalid number of days to span.';
 $txt['moveto_noboards'] = 'There are no boards to move this topic to!';
 $txt['topic_already_moved'] = 'This topic %1$s has been moved to the board %2$s, please check its new location before moving it again.';
 
-$txt['already_activated'] = 'Your account has already been activated.';
+$txt['already_activated'] = 'We\'d love to process your request, but your account has already been activated.';
 $txt['still_awaiting_approval'] = 'Your account is still awaiting admin approval.';
 
 $txt['invalid_email'] = 'Invalid email address / email address range.<br />Example of a valid email address: evil.user@badsite.com.<br />Example of a valid email address range: *@*.badsite.com';
@@ -183,13 +185,22 @@ $txt['invalid_ip'] = 'Invalid IP / IP range.<br />Example of a valid IP address:
 $txt['invalid_tracking_ip'] = 'Invalid IP / IP range.<br />Example of a valid IP address: 127.0.0.1<br />Example of a valid IP range: 127.0.0.*';
 $txt['invalid_username'] = 'Member name not found';
 $txt['no_user_selected'] = 'Member not found';
-$txt['no_ban_admin'] = 'You may not ban an admin - You must demote them first!';
+$txt['no_ban_admin'] = 'Hey! We can\'t let you ban an admin. If you are certain about this, demote them first!';
 $txt['no_bantype_selected'] = 'No ban type was selected';
 $txt['ban_not_found'] = 'Ban not found';
 $txt['ban_unknown_restriction_type'] = 'Restriction type unknown';
 $txt['ban_name_empty'] = 'The name of the ban was left empty';
+$txt['ban_id_empty'] = 'Dang, sorry. We tried to find this ban id, but it can\'t be found.';
+$txt['ban_group_id_empty'] = 'A ban group needs a group id, and this group didn\'t have any.';
+$txt['ban_no_triggers'] = 'Did you forget to select ban triggers? We need at least one, and we haven\'t got any.';
+$txt['ban_ban_item_empty'] = 'Ban trigger not found';
+$txt['impossible_insert_new_bangroup'] = 'An error occurred while inserting the new ban';
+
+$txt['cant_like_yourself'] = 'Liking your own posts ... its like laughing at your own jokes when there is no one else around  ... lol ... Wait did I just lol myself?';
+
 $txt['ban_name_exists'] = 'The name of this ban (%1$s) already exists. Please choose a different name.';
 $txt['ban_trigger_already_exists'] = 'This ban trigger (%1$s) already exists in %2$s.';
+$txt['attach_check_nag'] = 'Unable to continue due to incomplete data (%1$s).';
 
 $txt['recycle_no_valid_board'] = 'No valid board selected for recycled topics';
 $txt['post_already_deleted'] = 'The topic or message has already been moved to the recycle board. Are you sure you want to delete it completely?<br />If so follow <a href="%1$s">this link</a>';
@@ -197,10 +208,10 @@ $txt['post_already_deleted'] = 'The topic or message has already been moved to t
 $txt['login_threshold_fail'] = 'Sorry, you are out of login chances.  Please come back and try again later.';
 $txt['login_threshold_brute_fail'] = 'Sorry, but you\'ve reached your login attempts threshold.  Please wait 30 seconds and try again later.';
 
-$txt['who_off'] = 'You cannot access Who\'s Online right now because it is disabled.';
+$txt['who_off'] = 'We would love to let you peek at Who\'s Online, but unfortunately right now it\'s disabled.';
 
-$txt['merge_create_topic_failed'] = 'Error creating a new topic.';
-$txt['merge_need_more_topics'] = 'Merge topics require at least two topics to merge.';
+$txt['merge_create_topic_failed'] = 'Dang, sorry. We tried, we really did, but creating a new topic failed.';
+$txt['merge_need_more_topics'] = 'Merge topics requires at least two topics to merge, but we didn\'t get two. Please try again.';
 
 $txt['post_WaitTime_broken'] = 'The last posting from your IP was less than %1$d seconds ago. Please try again later.';
 $txt['register_WaitTime_broken'] = 'You already registered just %1$d seconds ago!';
@@ -212,12 +223,12 @@ $txt['sendmail_WaitTime_broken'] = 'The last email sent from your IP was less th
 $txt['search_WaitTime_broken'] = 'Your last search was less than %1$d seconds ago. Please try again later.';
 $txt['remind_WaitTime_broken'] = 'Your last reminder was less than %1$d seconds ago. Please try again later.';
 
-$txt['email_missing_data'] = 'You must enter something in both the subject and message boxes.';
+$txt['email_missing_data'] = 'We need something in both the subject and message boxes.';
 
-$txt['topic_gone'] = 'The topic or board you are looking for appears to be either missing or off limits to you.';
-$txt['theme_edit_missing'] = 'The file you are trying to edit can\'t be found.';
+$txt['topic_gone'] = 'We tried very hard to find the topic or board you are looking for, but it\'s nowhere to be found. It appears to be either missing or off limits to you.';
+$txt['theme_edit_missing'] = 'We tried very hard to find the file you are trying to edit, but it can\'t be found.';
 
-$txt['no_dump_database'] = 'Only administrators can make database backups.';
+$txt['no_dump_database'] = 'Sorry, we can\'t let you make database backups. Only administrators can.';
 $txt['pm_not_yours'] = 'The personal message you\'re trying to quote is not your own or does not exist, please go back and try again.';
 $txt['mangled_post'] = 'Mangled form data - please go back and try again.';
 $txt['too_many_groups'] = 'Sorry, you selected too many groups, please remove some.';
@@ -234,12 +245,15 @@ $txt['error_no_name'] = 'No name was provided.';
 $txt['error_bad_name'] = 'The name you submitted cannot be used, because it is or contains a reserved name.';
 $txt['error_no_email'] = 'No email address was provided.';
 $txt['error_bad_email'] = 'An invalid email address was given.';
+$txt['error_email'] = 'email address';
+$txt['error_message'] = 'message';
 $txt['error_no_event'] = 'No event name has been given.';
 $txt['error_no_subject'] = 'No subject was filled in.';
 $txt['error_no_question'] = 'No question was filled in for this poll.';
 $txt['error_no_message'] = 'The message body was left empty.';
 $txt['error_long_message'] = 'The message exceeds the maximum allowed length (%1$d characters).';
 $txt['error_no_comment'] = 'The comment field was left empty.';
+$txt['error_post_too_long'] = 'Your message is too long. Please enter a maximum of 255 characters.';
 $txt['error_session_timeout'] = 'Your session timed out while posting. Please try to re-submit your message.';
 $txt['error_no_to'] = 'No recipients specified.';
 $txt['error_bad_to'] = 'One or more \'to\'-recipients could not be found.';
@@ -254,6 +268,7 @@ $txt['error_need_verification_code'] = 'Please enter the verification code below
 $txt['error_bad_file'] = 'Sorry but the file specified could not be opened: %1$s';
 $txt['error_bad_line'] = 'The line you specified is invalid.';
 $txt['error_draft_not_saved'] = 'There was an error saving the draft';
+$txt['error_name_in_use'] = 'The name %1$s is already in use by another member.';
 
 $txt['smiley_not_found'] = 'Smiley not found.';
 $txt['smiley_has_no_code'] = 'No code for this smiley was given.';
@@ -275,19 +290,20 @@ $txt['unable_to_create_temporary'] = 'The search function was unable to create t
 
 $txt['package_no_file'] = 'Unable to find package file!';
 $txt['packageget_unable'] = 'Unable to connect to the server.  Please try using <a href="%1$s" target="_blank" class="new_win">this URL</a> instead.';
-$txt['not_on_simplemachines'] = 'Sorry, packages can only be downloaded like this from the simplemachines.org server.';
+$txt['not_valid_server'] = 'Sorry, packages can only be downloaded like this from servers you have first authorized.';
 $txt['package_cant_uninstall'] = 'This package was either never installed or was already uninstalled - you can\'t uninstall it now.';
-$txt['package_cant_download'] = 'You cannot download or install new packages because the Packages directory or one of the files in it are not writable!';
+$txt['package_cant_download'] = 'You cannot download or install new packages because the &quot;packages&quot; directory or one of the files in it are not writable!';
 $txt['package_upload_error_nofile'] = 'You did not select a package to upload.';
 $txt['package_upload_error_failed'] = 'Could not upload package, please check directory permissions!';
 $txt['package_upload_error_exists'] = 'The file you are uploading already exists on the server. Please delete it first then try again.';
+$txt['package_upload_already_exists'] = 'The package you are trying to upload already exists on the server under filename: %1$s';
 $txt['package_upload_error_supports'] = 'The package manager currently allows only these file types: %1$s.';
 $txt['package_upload_error_broken'] = 'Package upload failed due to the following error:<br />&quot;%1$s&quot;';
 
-$txt['package_get_error_not_found'] = 'The package you are trying to install cannot be located. You may want to manually upload the package to your Packages directory.';
+$txt['package_get_error_not_found'] = 'The package you are trying to install cannot be located. You may want to manually upload the package to your &quot;packages&quot; directory.';
 $txt['package_get_error_missing_xml'] = 'The package you are attempting to install is missing the package-info.xml that must be in the root package directory.';
-$txt['package_get_error_is_zero'] = 'Although the package was downloaded to the server it appears to be empty. Please check the Packages directory, and the &quot;temp&quot; sub-directory are both writable. If you continue to experience this problem you should try extracting the package on your PC and uploading the extracted files into a subdirectory in your Packages directory and try again. For example, if the package was called shout.tar.gz you should:<br />1) Download the package to your local PC and extract it into files.<br />2) Using an FTP client create a new directory in your &quot;Packages&quot; folder, in this example you may call it "shout".<br />3) Upload all the files from the extracted package to this directory.<br />4) Go back to the package manager browse page and the package will be automatically found.';
-$txt['package_get_error_packageinfo_corrupt'] = 'Unable to find any valid information within the package-info.xml file included within the Package. There may be an error with the modification, or the package may be corrupt.';
+$txt['package_get_error_is_zero'] = 'Although the package was downloaded to the server it appears to be empty. Please check the &quot;packages&quot; directory, and the &quot;temp&quot; sub-directory are both writable. If you continue to experience this problem you should try extracting the package on your PC and uploading the extracted files into a subdirectory in your &quot;packages&quot; directory and try again. For example, if the package was called shout.tar.gz you should:<br />1) Download the package to your local PC and extract it into files.<br />2) Using an FTP client create a new directory in your &quot;packages&quot; folder, in this example you may call it "shout".<br />3) Upload all the files from the extracted package to this directory.<br />4) Go back to the package manager browse page and the package will be automatically found.';
+$txt['package_get_error_packageinfo_corrupt'] = 'Unable to find any valid information within the package-info.xml file included within the Package. There may be an error in the addon, or the package may be corrupt.';
 $txt['package_get_error_is_theme'] = 'You can\'t install a Theme from this section, please use the <a href="{MANAGETHEMEURL}">Themes and Layout</a> management page to upload it';
 
 $txt['no_membergroup_selected'] = 'No membergroup selected';
@@ -301,8 +317,8 @@ $txt['error_functionality_not_windows'] = 'Sorry, this functionality is currentl
 $txt['attachment_not_found'] = 'Attachment Not Found';
 
 $txt['error_no_boards_selected'] = 'No valid boards were selected.';
-$txt['error_invalid_search_string'] = 'Did you forget to put something to search for?';
-$txt['error_invalid_search_string_blacklist'] = 'Your search query contained too trivial words. Please try again with a different query.';
+$txt['error_invalid_search_string'] = 'Did you forget to enter something to search for?';
+$txt['error_invalid_search_string_blacklist'] = 'Your search query contained trivial words. Please try again with a different query.';
 $txt['error_search_string_small_words'] = 'Each word must be at least two characters long.';
 $txt['error_query_not_specific_enough'] = 'Your search query didn\'t return any matches.';
 $txt['error_no_messages_in_time_frame'] = 'No messages found in selected time frame.';
@@ -328,7 +344,6 @@ $txt['profile_error_password_chars'] = 'Your password must contain a mix of uppe
 $txt['profile_error_already_requested_group'] = 'You already have an outstanding request for this group!';
 $txt['profile_error_openid_in_use'] = 'Another user is already using that OpenID authentication URL';
 $txt['profile_error_signature_not_yet_saved'] = 'The signature has not been saved.';
-$txt['profile_error_aim_too_long'] = 'The AIM nickname is too long.';
 $txt['profile_error_personal_text_too_long'] = 'The personal text is too long.';
 $txt['profile_error_user_title_too_long'] = 'The custom title is too long.';
 
@@ -385,9 +400,12 @@ $txt['custom_option_regex_error'] = 'The regex you entered is not valid';
 $txt['warning_no_reason'] = 'You must enter a reason for altering the warning state of a member';
 $txt['warning_notify_blank'] = 'You selected to notify the user but did not fill in the subject/message fields';
 
-$txt['cannot_connect_doc_site'] = 'Could not connect to the Simple Machines Online Manual. Please check that your server configuration allows external internet connections and try again later.';
+$txt['cannot_connect_doc_site'] = 'Could not connect to the documentation site. Please check that your server configuration allows external internet connections and try again later.';
 
 $txt['movetopic_no_reason'] = 'You must enter a reason for moving the topic, or uncheck the option to \'post a redirection topic\'.';
+$txt['movetopic_no_board'] = 'You must choose a board to move the topic to.';
+
+$txt['splittopic_no_reason'] = 'You must enter a reason for moving the topic, or uncheck the option to \'post a redirection message\'.';
 
 // OpenID error strings
 $txt['openid_server_bad_response'] = 'The requested identifier did not return the proper information.';
@@ -417,4 +435,8 @@ $txt['restore_not_found'] = 'The following messages could not be restored; the o
 
 $txt['error_invalid_dir'] = 'The directory you entered is invalid.';
 
-$txt['error_sqlite_optimizing'] = 'Sqlite is optimizing the database, the forum can not be accessed until it has finished.  Please try refreshing this page momentarily.';
+// Admin/dispatching strings
+$txt['error_sa_not_set'] = 'Sub-action not set';
+
+// Drag / Drop sort errors
+$txt['no_sortable_items'] = 'No sortable items were found';

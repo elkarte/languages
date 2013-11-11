@@ -36,7 +36,6 @@ $txt['pm_error_data_limit_reached'] = 'PM could not be sent to \'%1$s\' as their
 $txt['pm_error_user_cannot_read'] = 'User \'%1$s\' can not receive personal messages.';
 $txt['pm_successfully_sent'] = 'PM successfully sent to \'%1$s\'.';
 $txt['pm_send_report'] = 'Send report';
-$txt['pm_save_outbox'] = 'Save a copy in my outbox';
 $txt['pm_undisclosed_recipients'] = 'Undisclosed recipients';
 $txt['pm_too_many_recipients'] = 'You may not send personal messages to more than %1$d recipient(s) at once.';
 
@@ -44,7 +43,7 @@ $txt['pm_read'] = 'Read';
 $txt['pm_replied'] = 'Replied To';
 
 // Message Pruning.
-$txt['pm_prune'] = 'Prune Messages';
+$txt['pm_prune'] = 'Prune messages';
 $txt['pm_prune_desc1'] = 'Delete all personal messages older than';
 $txt['pm_prune_desc2'] = 'days.';
 $txt['pm_prune_warning'] = 'Are you sure you wish to prune your personal messages?';
@@ -105,7 +104,8 @@ $txt['pm_search_title'] = 'Search personal messages';
 $txt['pm_search_bar_title'] = 'Search messages';
 $txt['pm_search_text'] = 'Search for';
 $txt['pm_search_go'] = 'Search';
-$txt['pm_search_advanced'] = 'Advanced search';
+$txt['pm_search_advanced'] = 'Show advanced options';
+$txt['pm_search_simple'] = 'Hide advanced options';
 $txt['pm_search_user'] = 'By user';
 $txt['pm_search_match_all'] = 'Match all words';
 $txt['pm_search_match_any'] = 'Match any words';
@@ -113,6 +113,7 @@ $txt['pm_search_options'] = 'Options';
 $txt['pm_search_post_age'] = 'Message age';
 $txt['pm_search_show_complete'] = 'Show full message in results.';
 $txt['pm_search_subject_only'] = 'Search by subject and author only.';
+$txt['pm_search_sent_only'] = 'Search only in sent items.';
 $txt['pm_search_between'] = 'between';
 $txt['pm_search_between_and'] = 'and';
 $txt['pm_search_between_days'] = 'days';
@@ -132,7 +133,7 @@ $txt['pm_visual_verification_desc'] = 'Please enter the code in the image above 
 $txt['pm_settings'] = 'Change settings';
 $txt['pm_change_view'] = 'Change view';
 
-$txt['pm_manage_rules'] = 'Manage Rules';
+$txt['pm_manage_rules'] = 'Manage rules';
 $txt['pm_manage_rules_desc'] = 'Message rules allow you to automatically sort incoming messages dependant on a set of criteria you define. Below are all the rules you currently have setup. To edit a rule simply click the rule name.';
 $txt['pm_rules_none'] = 'You have not yet setup any message rules.';
 $txt['pm_rule_title'] = 'Rule';
@@ -140,8 +141,8 @@ $txt['pm_add_rule'] = 'Add new rule';
 $txt['pm_apply_rules'] = 'Apply rules now';
 // Use entities in the below string.
 $txt['pm_js_apply_rules_confirm'] = 'Are you sure you wish to apply the current rules to all personal messages?';
-$txt['pm_edit_rule'] = 'Edit Rule';
-$txt['pm_rule_save'] = 'Save Rule';
+$txt['pm_edit_rule'] = 'Edit rule';
+$txt['pm_rule_save'] = 'Save rule';
 $txt['pm_delete_selected_rule'] = 'Delete selected rules';
 // Use entities in the below string.
 $txt['pm_js_delete_rule_confirm'] = 'Are you sure you wish to delete the selected rules?';

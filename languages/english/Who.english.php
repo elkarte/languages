@@ -31,7 +31,7 @@ $txt['whoall_credits'] = 'Viewing credits page.';
 $txt['whoall_emailuser'] = 'Sending email to another member.';
 $txt['whoall_groups'] = 'Viewing the member groups page.';
 $txt['whoall_help'] = 'Viewing the <a href="' . $scripturl . '?action=help">help page</a>.';
-$txt['whoall_helpadmin'] = 'Viewing a help popup.';
+$txt['whoall_quickhelp'] = 'Viewing a help popup.';
 $txt['whoall_pm'] = 'Viewing their messages.';
 $txt['whoall_login'] = 'Logging into the forum.';
 $txt['whoall_login2'] = 'Logging into the forum.';
@@ -106,7 +106,7 @@ $txt['whoallow_mailing'] = 'Sending a forum email.';
 $txt['whoallow_maintain'] = 'Performing routine forum maintenance.';
 $txt['whoallow_manageattachments'] = 'Managing the attachments.';
 $txt['whoallow_moderate'] = 'Viewing the <a href="' . $scripturl . '?action=moderate">Moderation Center</a>.';
-$txt['whoallow_mlist'] = 'Viewing the <a href="' . $scripturl . '?action=mlist">memberlist</a>.';
+$txt['whoallow_memberlist'] = 'Viewing the <a href="' . $scripturl . '?action=memberlist">memberlist</a>.';
 $txt['whoallow_optimizetables'] = 'Optimizing the database tables.';
 $txt['whoallow_repairboards'] = 'Repairing the database tables.';
 $txt['whoallow_search'] = '<a href="' . $scripturl . '?action=search">Searching</a> the forum.';
@@ -125,17 +125,22 @@ $txt['who_profile'] = 'Editing the profile of <a href="' . $scripturl . '?action
 $txt['who_post'] = 'Posting a new topic in <a href="' . $scripturl . '?board=%1$d.0">%2$s</a>.';
 $txt['who_poll'] = 'Posting a new poll in <a href="' . $scripturl . '?board=%1$d.0">%2$s</a>.';
 
+$txt['whotopic_topicbyemail'] = 'Email starting a new topic in <a href="' . $scripturl . '?board=%1$d.0">%2$s</a>.';
+$txt['whotopic_postbyemail'] = 'Email posting in <a href="' . $scripturl . '?topic=%1$d.0">%2$s</a>.';
+$txt['who_pm_byemail'] = 'Sending a personal message by email.';
+
 // Credits text
 $txt['credits'] = 'Credits';
-$txt['credits_intro'] = 'Dialogo wants to thank everyone who helped make it possilbe it is today.  It wouldn\'t have been possible without you. Thanks for installing and using our software as well as providing valuable feedback, bug reports, and opinions.';
-$txt['credits_team'] = 'The Team';
+$txt['credits_intro'] = 'ElkArte wants to thank everyone who helped make it possible it is today.  It wouldn\'t have been possible without you. Thanks for installing and using our software as well as providing valuable feedback, bug reports, and opinions.';
+$txt['credits_contributors'] = 'Contributors';
 $txt['credits_and'] = 'and';
 $txt['credits_copyright'] = 'Copyrights';
 $txt['credits_forum'] = 'Forum';
-$txt['credits_modifications'] = 'Modifications';
+$txt['credits_addons'] = 'Add-ons';
 $txt['credits_software_graphics'] = 'Software/Graphics';
 $txt['credits_software'] = 'Software';
 $txt['credits_graphics'] = 'Graphics';
+$txt['credits_fonts'] = 'Fonts';
 $txt['credits_groups_dev'] = 'Developers';
 $txt['credits_license'] = 'License';
 $txt['credits_copyright'] = 'Copyright';
@@ -143,12 +148,11 @@ $txt['credits_version'] = 'Version';
 // Replace "English" with the name of this language pack in the string below.
 $txt['credits_groups_translation'] = 'English Translation';
 $txt['credits_groups_translators'] = 'Language Translators';
-$txt['credits_translators_message'] = 'Thank you for your efforts which make it possible for people all around the world to use SMF.';
+$txt['credits_translators_message'] = 'Thank you for your efforts which make it possible for people all around the world to use ElkArte.';
 $txt['credits_groups_consultants'] = 'Consulting Developers';
 $txt['credits_groups_beta'] = 'Beta Testers';
 $txt['credits_beta_message'] = 'The invaluable few who tirelessly find bugs, provide feedback, and drive the developers crazier.';
 $txt['credits_groups_founder'] = 'Founding Father of SMF';
-$txt['credits_groups_orignal_pm'] = 'Original Project Managers';
 
 // List of people who have made more than a token contribution to this translation. (blank for English)
 $txt['translation_credits'] = array();
