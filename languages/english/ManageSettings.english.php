@@ -96,6 +96,7 @@ $txt['topbottomEnable'] = 'Enable Go Up/Go Down buttons';
 $txt['onlineEnable'] = 'Show online/offline in posts and PMs';
 $txt['enableVBStyleLogin'] = 'Show a quick login on every page';
 $txt['defaultMaxMembers'] = 'Members per page in member list';
+$txt['displayMemberNames'] = 'Display the member\'s name instead of "My Account" on the profile account button';
 $txt['timeLoadPageEnable'] = 'Display time taken to create every page';
 $txt['disableHostnameLookup'] = 'Disable hostname lookups';
 $txt['who_enabled'] = 'Enable who\'s online list';
@@ -183,7 +184,7 @@ $txt['guests_report_require_captcha'] = 'Guests must pass verification when repo
 
 $txt['badbehavior_title'] = 'Bad Behavior Settings';
 $txt['badbehavior_details'] = 'Details';
-$txt['badbehavior_desc'] = 'Bad Behavior is designed to run as early as possible to throw out spam bots before they have the opportunity to vandalize your site or even to scrape your pages for e-mail addresses and forms to fill out.<br />Bad Behavior also blocks many e-mail address harvesters, resulting in less e-mail spam, and many automated Web site cracking tools, helping to improve your Web site\'s overall security.';
+$txt['badbehavior_desc'] = 'Bad Behavior is designed to run as early as possible to throw out spam bots before they have the opportunity to vandalize your site or even to scrape your pages for email addresses and forms to fill out.<br />Bad Behavior also blocks many email address harvesters, resulting in less email spam, and many automated Web site cracking tools, helping to improve your Web site\'s overall security.';
 $txt['badbehavior_wl_desc'] = 'Inappropriate whitelisting WILL expose you to spam, or cause Bad Behavior to stop functioning entirely! <strong>DO NOT WHITELIST</strong> unless you are 100% CERTAIN that you should and know what you are doing.';
 $txt['badbehavior_enabled'] = 'Enable Bad Behavior Checking';
 $txt['badbehavior_enabled_desc'] = 'Check to enable Bad Behavior protection on your site.';
@@ -265,7 +266,7 @@ $txt['setting_warning_show_all'] = 'All Users';
 
 $txt['signature_settings'] = 'Signature Settings';
 $txt['signature_settings_desc'] = 'Use the settings on this page to decide how member signatures should be treated.';
-$txt['signature_settings_warning'] = 'Note that settings are not applied to existing signatures by default. <a href="' . $scripturl . '?action=admin;area=featuresettings;sa=sig;apply;%2$s=%1$s">Run the process now</a>';
+$txt['signature_settings_warning'] = 'Note that settings are not applied to existing signatures by default.<br /><a class="button_submit" href="' . $scripturl . '?action=admin;area=featuresettings;sa=sig;apply;%2$s=%1$s">Run the process now</a>';
 $txt['signature_settings_applied'] = 'The updated rules have been applied to the existing signatures.';
 $txt['signature_enable'] = 'Enable signatures';
 $txt['signature_max_length'] = 'Maximum allowed characters';
