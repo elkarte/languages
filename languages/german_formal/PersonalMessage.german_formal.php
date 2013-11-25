@@ -3,186 +3,186 @@
 
 global $context;
 
-$txt['pm_inbox'] = 'Personal Messages Index';
-$txt['send_message'] = 'Send message';
-$txt['pm_add'] = 'Add';
-$txt['make_bcc'] = 'Add BCC';
-$txt['pm_to'] = 'To';
-$txt['pm_bcc'] = 'Bcc';
-$txt['inbox'] = 'Inbox';
-$txt['conversation'] = 'Conversation';
-$txt['messages'] = 'Messages';
-$txt['sent_items'] = 'Sent Items';
-$txt['new_message'] = 'New Message';
-$txt['delete_message'] = 'Delete Messages';
+$txt['pm_inbox'] = 'Private Nachrichten - Posteingang';
+$txt['send_message'] = 'Nachricht senden';
+$txt['pm_add'] = 'Hinzufügen';
+$txt['make_bcc'] = 'BCC hinzufügen';
+$txt['pm_to'] = 'An';
+$txt['pm_bcc'] = 'BCC';
+$txt['inbox'] = 'Posteingang';
+$txt['conversation'] = 'Gespräch';
+$txt['messages'] = 'Nachrichten';
+$txt['sent_items'] = 'Gesendet';
+$txt['new_message'] = 'Neue Nachricht';
+$txt['delete_message'] = 'Nachrichten löschen';
 // Don't translate "PMBOX" in this string.
-$txt['delete_all'] = 'Delete all messages in your PMBOX';
-$txt['delete_all_confirm'] = 'Are you sure you want to delete all messages?';
-$txt['recipient'] = 'Recipient';
+$txt['delete_all'] = 'Alle Nachrichten im Postfach löschen';
+$txt['delete_all_confirm'] = 'Sind Sie sich sicher, dass Sie alle Nachrichten löschen möchten?';
+$txt['recipient'] = 'Empfänger';
 
-$txt['delete_selected_confirm'] = 'Are you sure you want to delete all selected personal messages?';
+$txt['delete_selected_confirm'] = 'Sind Sie sich sicher, dass Sie alle ausgewählten privaten Nachrichten löschen möchten?';
 
-$txt['sent_to'] = 'Sent to';
-$txt['reply_to_all'] = 'Reply to All';
-$txt['delete_conversation'] = 'Delete Conversation';
+$txt['sent_to'] = 'Gesendet an';
+$txt['reply_to_all'] = 'Allen antworten';
+$txt['delete_conversation'] = 'Gespräch löschen';
 
-$txt['pm_capacity'] = 'Capacity';
-$txt['pm_currently_using'] = '%1$s messages, %2$s%% full.';
-$txt['pm_sent'] = 'Your message has been sent successfully.';
+$txt['pm_capacity'] = 'Kapazität';
+$txt['pm_currently_using'] = '%1$s Nachrichten, %2$s %% voll.';
+$txt['pm_sent'] = 'Ihre Nachricht wurde erfolgreich versandt.';
 
-$txt['pm_error_user_not_found'] = 'Unable to find member \'%1$s\'.';
-$txt['pm_error_ignored_by_user'] = 'User \'%1$s\' has blocked your personal message.';
-$txt['pm_error_data_limit_reached'] = 'PM could not be sent to \'%1$s\' as their inbox is full.';
-$txt['pm_error_user_cannot_read'] = 'User \'%1$s\' can not receive personal messages.';
-$txt['pm_successfully_sent'] = 'PM successfully sent to \'%1$s\'.';
-$txt['pm_send_report'] = 'Send report';
-$txt['pm_undisclosed_recipients'] = 'Undisclosed recipients';
-$txt['pm_too_many_recipients'] = 'You may not send personal messages to more than %1$d recipient(s) at once.';
+$txt['pm_error_user_not_found'] = 'Konnte Mitglied \'%1$s\' nicht finden.';
+$txt['pm_error_ignored_by_user'] = 'Benutzer \'%1$s\' hat Ihre private Nachricht blockiert.';
+$txt['pm_error_data_limit_reached'] = 'PN konnte nicht an \'%1$s\' gesendet werden, das Postfach ist voll.';
+$txt['pm_error_user_cannot_read'] = 'Benutzer \'%1$s\' kann keine privaten Nachrichten erhalten.';
+$txt['pm_successfully_sent'] = 'PN erfolgreich an \'%1$s\' versandt.';
+$txt['pm_send_report'] = 'Sendebericht'; // ? :)
+$txt['pm_undisclosed_recipients'] = 'Verborgene Empfänger';
+$txt['pm_too_many_recipients'] = 'Sie können private Nachrichten nicht an mehr als %1$d Empfänger gleichzeitig versenden.';
 
-$txt['pm_read'] = 'Read';
-$txt['pm_replied'] = 'Replied To';
+$txt['pm_read'] = 'Gelesen';
+$txt['pm_replied'] = 'Beantwortet';
 
 // Message Pruning.
-$txt['pm_prune'] = 'Prune messages';
-$txt['pm_prune_desc1'] = 'Delete all personal messages older than';
-$txt['pm_prune_desc2'] = 'days.';
-$txt['pm_prune_warning'] = 'Are you sure you wish to prune your personal messages?';
+$txt['pm_prune'] = 'Nachrichten aufräumen';
+$txt['pm_prune_desc1'] = 'Alle privaten Nachrichten löschen, die älter als';
+$txt['pm_prune_desc2'] = 'Tage sind.';
+$txt['pm_prune_warning'] = 'Sind Sie sich sicher, dass Sie die privaten Nachrichten aufräumen möchten?';
 
 // Actions Drop Down.
-$txt['pm_actions_title'] = 'Further actions';
-$txt['pm_actions_delete_selected'] = 'Delete selected';
-$txt['pm_actions_filter_by_label'] = 'Filter by label';
-$txt['pm_actions_go'] = 'Go';
+$txt['pm_actions_title'] = 'Weitere Aktionen';
+$txt['pm_actions_delete_selected'] = 'Ausgewählte löschen';
+$txt['pm_actions_filter_by_label'] = 'Nach Etikett filtern';
+$txt['pm_actions_go'] = 'Los';
 
 // Manage Labels Screen.
-$txt['pm_apply'] = 'Apply';
-$txt['pm_manage_labels'] = 'Manage labels';
-$txt['pm_labels_delete'] = 'Are you sure you wish to delete the selected labels?';
-$txt['pm_labels_desc'] = 'From here you can add, edit and delete the labels used in your personal message center.';
-$txt['pm_label_add_new'] = 'Add new label';
-$txt['pm_label_name'] = 'Label name';
-$txt['pm_labels_no_exist'] = 'You currently have no labels setup!';
+$txt['pm_apply'] = 'Anwenden';
+$txt['pm_manage_labels'] = 'Etiketten verwalten';
+$txt['pm_labels_delete'] = 'Sind Sie sich sicher, dass Sie die ausgewählten Etiketten löschen möchten?';
+$txt['pm_labels_desc'] = 'Von hier aus können Sie die in Ihrem Nachrichtenzentrum benutzten Etiketten hinzufügen, ändern und entfernen.';
+$txt['pm_label_add_new'] = 'Neues Etikett';
+$txt['pm_label_name'] = 'Etikettenname';
+$txt['pm_labels_no_exist'] = 'Sie haben momentan keine Etiketten eingerichtet!';
 
 // Labeling Drop Down.
-$txt['pm_current_label'] = 'Label';
-$txt['pm_msg_label_title'] = 'Label message';
-$txt['pm_msg_label_apply'] = 'Add label';
-$txt['pm_msg_label_remove'] = 'Remove label';
-$txt['pm_msg_label_inbox'] = 'Inbox';
-$txt['pm_sel_label_title'] = 'Label selected';
+$txt['pm_current_label'] = 'Etikett';
+$txt['pm_msg_label_title'] = 'Nachricht etikettieren';
+$txt['pm_msg_label_apply'] = 'Etikett anhängen';
+$txt['pm_msg_label_remove'] = 'Etikett entfernen';
+$txt['pm_msg_label_inbox'] = 'Posteingang';
+$txt['pm_sel_label_title'] = 'Ausgewählte etikettieren';
 
 // Sidebar Headings.
-$txt['pm_labels'] = 'Labels';
-$txt['pm_messages'] = 'Messages';
-$txt['pm_actions'] = 'Actions';
-$txt['pm_preferences'] = 'Preferences';
+$txt['pm_labels'] = 'Etiketten';
+$txt['pm_messages'] = 'Nachrichten';
+$txt['pm_actions'] = 'Aktionen';
+$txt['pm_preferences'] = 'Einstellungen';
 
-$txt['pm_is_replied_to'] = 'You have forwarded or responded to this message.';
+$txt['pm_is_replied_to'] = 'Sie haben diese Nachricht weitergeleitet oder beantwortet.';
 
 // Reporting messages.
-$txt['pm_report_to_admin'] = 'Report to admin';
-$txt['pm_report_title'] = 'Report personal message';
-$txt['pm_report_desc'] = 'From this page you can report the personal message you received to the admin team of the forum. Please be sure to include a description of why you are reporting the message, as this will be sent along with the contents of the original message.';
-$txt['pm_report_admins'] = 'Administrator to send report to';
-$txt['pm_report_all_admins'] = 'Send to all forum administrators';
-$txt['pm_report_reason'] = 'Reason why you are reporting this message';
-$txt['pm_report_message'] = 'Report Message';
+$txt['pm_report_to_admin'] = 'Einem Admin melden';
+$txt['pm_report_title'] = 'Private Nachricht melden';
+$txt['pm_report_desc'] = 'Auf dieser Seite können Sie die erhaltene private Nachricht dem Administratorenteam des Forums melden. Stellen Sie sicher, dass Sie eine Beschreibung beifügen, wieso Sie die Nachricht melden, da diese gemeinsam mit dem Inhalt der Originalnachricht versandt wird.';
+$txt['pm_report_admins'] = 'Administrator, dem die Nachricht gemeldet werden soll';
+$txt['pm_report_all_admins'] = 'An alle Administratoren senden';
+$txt['pm_report_reason'] = 'Grund für die Meldung';
+$txt['pm_report_message'] = 'Nachricht melden';
 
 // Important - The following strings should use numeric entities.
-$txt['pm_report_pm_subject'] = '[REPORT] ';
+$txt['pm_report_pm_subject'] = '[MELDUNG] ';
 // In the below string, do not translate "{REPORTER}" or "{SENDER}".
-$txt['pm_report_pm_user_sent'] = '{REPORTER} has reported the below personal message, sent by {SENDER}, for the following reason:';
-$txt['pm_report_pm_other_recipients'] = 'Other recipients of the message include:';
-$txt['pm_report_pm_hidden'] = '%1$d hidden recipient(s)';
-$txt['pm_report_pm_unedited_below'] = 'Below are the original contents of the personal message which was reported:';
-$txt['pm_report_pm_sent'] = 'Sent:';
+$txt['pm_report_pm_user_sent'] = '{REPORTER} hat unten stehende private Nachricht von {SENDER} aus folgendem Grund gemeldet:';
+$txt['pm_report_pm_other_recipients'] = 'Weitere Empfänger der Nachricht sind:';
+$txt['pm_report_pm_hidden'] = '%1$d versteckte(r) Empfänger';
+$txt['pm_report_pm_unedited_below'] = 'Es folgt der Originalinhalt der beanstandeten Nachricht:';
+$txt['pm_report_pm_sent'] = 'Gesendet:';
 
-$txt['pm_report_done'] = 'Thank you for submitting this report. You should hear back from the admin team shortly.';
-$txt['pm_report_return'] = 'Return to the inbox';
+$txt['pm_report_done'] = 'Danke für Ihre Meldung. Sie werden in Kürze von den Administratoren hören.';
+$txt['pm_report_return'] = 'Zurück zum Posteingang';
 
-$txt['pm_search_title'] = 'Search personal messages';
-$txt['pm_search_bar_title'] = 'Search messages';
-$txt['pm_search_text'] = 'Search for';
-$txt['pm_search_go'] = 'Search';
-$txt['pm_search_advanced'] = 'Show advanced options';
-$txt['pm_search_simple'] = 'Hide advanced options';
-$txt['pm_search_user'] = 'By user';
-$txt['pm_search_match_all'] = 'Match all words';
-$txt['pm_search_match_any'] = 'Match any words';
-$txt['pm_search_options'] = 'Options';
-$txt['pm_search_post_age'] = 'Message age';
-$txt['pm_search_show_complete'] = 'Show full message in results.';
-$txt['pm_search_subject_only'] = 'Search by subject and author only.';
-$txt['pm_search_sent_only'] = 'Search only in sent items.';
-$txt['pm_search_between'] = 'between';
-$txt['pm_search_between_and'] = 'and';
-$txt['pm_search_between_days'] = 'days';
-$txt['pm_search_order'] = 'Search order';
-$txt['pm_search_choose_label'] = 'Choose labels to search by, or search all';
+$txt['pm_search_title'] = 'Private Nachrichten durchsuchen';
+$txt['pm_search_bar_title'] = 'Nachrichten durchsuchen';
+$txt['pm_search_text'] = 'Suchen nach';
+$txt['pm_search_go'] = 'Suchen';
+$txt['pm_search_advanced'] = 'Erweiterte Optionen anzeigen';
+$txt['pm_search_simple'] = 'Erweiterte Optionen verstecken';
+$txt['pm_search_user'] = 'Von Benutzer';
+$txt['pm_search_match_all'] = 'Finde alle Wörter';
+$txt['pm_search_match_any'] = 'FInde mindestens eines der Wörter';
+$txt['pm_search_options'] = 'Optionen';
+$txt['pm_search_post_age'] = 'Alter der Nachricht';
+$txt['pm_search_show_complete'] = 'Vollständige Nachricht in den Ergebnissen anzeigen.';
+$txt['pm_search_subject_only'] = 'Nur nach Betreff und Autor suchen.';
+$txt['pm_search_sent_only'] = 'Nur in den versendeten Nachricht suchen.';
+$txt['pm_search_between'] = 'zwischen';
+$txt['pm_search_between_and'] = 'und';
+$txt['pm_search_between_days'] = 'Tagen';
+$txt['pm_search_order'] = 'Suchreihenfolge';
+$txt['pm_search_choose_label'] = 'Zu suchende Etiketten auswählen oder alle durchsuchen';
 
-$txt['pm_search_results'] = 'Search results';
-$txt['pm_search_none_found'] = 'No messages found';
+$txt['pm_search_results'] = 'Suchergebnisse';
+$txt['pm_search_none_found'] = 'Keine Nachrichten gefunden';
 
-$txt['pm_search_orderby_relevant_first'] = 'Most relevant first';
-$txt['pm_search_orderby_recent_first'] = 'Most recent first';
-$txt['pm_search_orderby_old_first'] = 'Oldest first';
+$txt['pm_search_orderby_relevant_first'] = 'Relevanteste zuerst';
+$txt['pm_search_orderby_recent_first'] = 'Neueste zuerst';
+$txt['pm_search_orderby_old_first'] = 'Älteste zuerst';
 
-$txt['pm_visual_verification_label'] = 'Verification';
-$txt['pm_visual_verification_desc'] = 'Please enter the code in the image above in order to send this PM.';
+$txt['pm_visual_verification_label'] = 'Verifizierung';
+$txt['pm_visual_verification_desc'] = 'Bitte geben Sie den Code auf oben stehender Grafik ein, um diese private Nachricht zu versenden.';
 
-$txt['pm_settings'] = 'Change settings';
-$txt['pm_change_view'] = 'Change view';
+$txt['pm_settings'] = 'Einstellungen ändern';
+$txt['pm_change_view'] = 'Ansicht ändern';
 
-$txt['pm_manage_rules'] = 'Manage rules';
-$txt['pm_manage_rules_desc'] = 'Message rules allow you to automatically sort incoming messages dependant on a set of criteria you define. Below are all the rules you currently have setup. To edit a rule simply click the rule name.';
-$txt['pm_rules_none'] = 'You have not yet setup any message rules.';
-$txt['pm_rule_title'] = 'Rule';
-$txt['pm_add_rule'] = 'Add new rule';
-$txt['pm_apply_rules'] = 'Apply rules now';
+$txt['pm_manage_rules'] = 'Regeln verwalten';
+$txt['pm_manage_rules_desc'] = 'Nachrichtenregeln erlauben es Ihnen, automatisch eingehende Nachrichten abhängig von einstellbaren Kriterien zu sortieren. Unten finden Sie alle momentan eingerichteten Regeln. Um eine Regel zu ändern, klicken Sie einfach auf ihren Namen.';
+$txt['pm_rules_none'] = 'Sie haben noch keine Nachrichtenregeln eingerichtet.';
+$txt['pm_rule_title'] = 'Regel';
+$txt['pm_add_rule'] = 'Neue Regel hinzufügen';
+$txt['pm_apply_rules'] = 'Regeln jetzt anwenden';
 // Use entities in the below string.
-$txt['pm_js_apply_rules_confirm'] = 'Are you sure you wish to apply the current rules to all personal messages?';
-$txt['pm_edit_rule'] = 'Edit rule';
-$txt['pm_rule_save'] = 'Save rule';
-$txt['pm_delete_selected_rule'] = 'Delete selected rules';
+$txt['pm_js_apply_rules_confirm'] = 'Sind Sie sich sicher, dass Sie die aktuellen Regeln auf alle privaten Nachrichten anwenden möchten?';
+$txt['pm_edit_rule'] = 'Regel ändern';
+$txt['pm_rule_save'] = 'Regel speichern';
+$txt['pm_delete_selected_rule'] = 'Ausgewählte Regeln löschen';
 // Use entities in the below string.
-$txt['pm_js_delete_rule_confirm'] = 'Are you sure you wish to delete the selected rules?';
+$txt['pm_js_delete_rule_confirm'] = 'Sind Sie sich sicher, dass Sie die ausgewählten Regeln löschen möchten?';
 $txt['pm_rule_name'] = 'Name';
-$txt['pm_rule_name_desc'] = 'Name to remember this rule by';
+$txt['pm_rule_name_desc'] = 'Name, mit dem sich diese Regel merken lässt';
 $txt['pm_rule_name_default'] = '[NAME]';
-$txt['pm_rule_description'] = 'Description';
-$txt['pm_rule_not_defined'] = 'Add some criteria to begin building this rule description.';
-$txt['pm_rule_js_disabled'] = '<span class="alert"><strong>Note:</strong> You appear to have javascript disabled. We highly recommend you enable javascript to use this feature.</span>';
-$txt['pm_rule_criteria'] = 'Criteria';
-$txt['pm_rule_criteria_add'] = 'Add criteria';
-$txt['pm_rule_criteria_pick'] = 'Choose criteria';
-$txt['pm_rule_mid'] = 'Sender name';
-$txt['pm_rule_gid'] = 'Sender\'s group';
-$txt['pm_rule_sub'] = 'Message subject contains';
-$txt['pm_rule_msg'] = 'Message body contains';
-$txt['pm_rule_bud'] = 'Sender is buddy';
-$txt['pm_rule_sel_group'] = 'Select group';
-$txt['pm_rule_logic'] = 'When checking criteria';
-$txt['pm_rule_logic_and'] = 'All criteria must be met';
-$txt['pm_rule_logic_or'] = 'Any criteria can be met';
-$txt['pm_rule_actions'] = 'Actions';
-$txt['pm_rule_sel_action'] = 'Select an action';
-$txt['pm_rule_add_action'] = 'Add action';
-$txt['pm_rule_label'] = 'Label message with';
-$txt['pm_rule_sel_label'] = 'Select label';
-$txt['pm_rule_delete'] = 'Delete message';
-$txt['pm_rule_no_name'] = 'You forgot to enter a name for the rule.';
-$txt['pm_rule_no_criteria'] = 'A rule must have at least one criteria and one action set.';
-$txt['pm_rule_too_complex'] = 'The rule you are creating is too long to save. Try breaking it up into smaller rules.';
+$txt['pm_rule_description'] = 'Beschreibung';
+$txt['pm_rule_not_defined'] = 'Fügen Sie ein paar Kriterien hinzu, um diese Regel zu beschreiben.';
+$txt['pm_rule_js_disabled'] = '<span class="alert"><strong>Hinweis:</strong> Sie haben JavaScript anscheinend deaktiviert. Wir empfehlen Ihnen wärmstens, zur Nutzung dieser Funktion JavaScript zu aktivieren.</span>';
+$txt['pm_rule_criteria'] = 'Kriterien';
+$txt['pm_rule_criteria_add'] = 'Kriterien hinzufügen';
+$txt['pm_rule_criteria_pick'] = 'Kriterien auswählen';
+$txt['pm_rule_mid'] = 'Absendername';
+$txt['pm_rule_gid'] = 'Absendergruppe';
+$txt['pm_rule_sub'] = 'Nachrichtenbetreff enthält';
+$txt['pm_rule_msg'] = 'Nachrichtentext enthält';
+$txt['pm_rule_bud'] = 'Absender ist Freund';
+$txt['pm_rule_sel_group'] = 'Wählen Sie eine Gruppe aus';
+$txt['pm_rule_logic'] = 'Beim Überprüfen der Kriterien';
+$txt['pm_rule_logic_and'] = 'Alle Kriterien müssen erfüllt werden';
+$txt['pm_rule_logic_or'] = 'Mindestens ein Kriterium muss erfüllt werden';
+$txt['pm_rule_actions'] = 'Aktionen';
+$txt['pm_rule_sel_action'] = 'Wählen Sie eine Aktion aus';
+$txt['pm_rule_add_action'] = 'Aktion hinzufügen';
+$txt['pm_rule_label'] = 'Nachricht etikettieren mit';
+$txt['pm_rule_sel_label'] = 'Wählen Sie ein Etikett aus';
+$txt['pm_rule_delete'] = 'Nachricht löschen';
+$txt['pm_rule_no_name'] = 'Sie haben vergessen, einen Namen für die Regel einzugeben.';
+$txt['pm_rule_no_criteria'] = 'Eine Regel muss mindestens ein Kriterium und eine Aktion umfassen.';
+$txt['pm_rule_too_complex'] = 'Die Regel, die Sie zu erstellen versuchen, ist zu lang. Versuchen Sie, sie in kürzere Regeln aufzuteilen.';
 
-$txt['pm_readable_and'] = '<em>and</em>';
-$txt['pm_readable_or'] = '<em>or</em>';
-$txt['pm_readable_start'] = 'If ';
+$txt['pm_readable_and'] = '<em>und</em>';
+$txt['pm_readable_or'] = '<em>oder</em>';
+$txt['pm_readable_start'] = 'Wenn ';
 $txt['pm_readable_end'] = '.';
-$txt['pm_readable_member'] = 'message is from &quot;{MEMBER}&quot;';
-$txt['pm_readable_group'] = 'sender is from the &quot;{GROUP}&quot; group';
-$txt['pm_readable_subject'] = 'message subject contains &quot;{SUBJECT}&quot;';
-$txt['pm_readable_body'] = 'message body contains &quot;{BODY}&quot;';
-$txt['pm_readable_buddy'] = 'sender is a buddy';
-$txt['pm_readable_label'] = 'apply label &quot;{LABEL}&quot;';
-$txt['pm_readable_delete'] = 'delete the message';
-$txt['pm_readable_then'] = '<strong>then</strong>';
+$txt['pm_readable_member'] = 'Nachricht ist von &quot;{MEMBER}&quot;';
+$txt['pm_readable_group'] = 'Absender ist in der Gruppe &quot;{GROUP}&quot;';
+$txt['pm_readable_subject'] = 'Betreff enthält &quot;{SUBJECT}&quot;';
+$txt['pm_readable_body'] = 'Nachrichtentext enthält &quot;{BODY}&quot;';
+$txt['pm_readable_buddy'] = 'Absender ist ein Freund';
+$txt['pm_readable_label'] = 'hänge Etikett &quot;{LABEL}&quot; an';
+$txt['pm_readable_delete'] = 'lösche die Nachricht';
+$txt['pm_readable_then'] = '<strong>dann</strong>';

@@ -3,129 +3,130 @@
 
 global $context;
 
-$txt['groups'] = 'Groups';
-$txt['viewing_groups'] = 'Viewing Membergroups';
+$txt['groups'] = 'Gruppen';
+$txt['viewing_groups'] = 'Betrachtet Benutzergruppen'; // ? :)
 
-$txt['membergroups_title'] = 'Manage Membergroups';
-$txt['membergroups_description'] = 'Membergroups are groups of members that have similar permission settings, appearance, or access rights. Some membergroups are based on the amount of posts a user has made. You can assign someone to a membergroup by selecting their profile and changing their account settings.';
-$txt['membergroups_modify'] = 'Modify';
+$txt['membergroups_title'] = 'Benutzergruppen verwalten';
+$txt['membergroups_description'] = 'Benutzergruppen sind Gruppen von Mitgliedern, die ähnliche Befugnisse, Erscheinungsbilder oder Zugriffsrechte innehaben. Die Mitgliedschaft in einigen Benutzergruppen ist abhängig von der Anzahl der Beiträge eines Mitglieds. Sie können jemandem eine Benutzergruppe zuweisen, indem Sie seine Kontoeinstellungen über sein Profil anpassen.';
+$txt['membergroups_modify'] = 'Ändern';
 
-$txt['membergroups_add_group'] = 'Add group';
-$txt['membergroups_regular'] = 'Regular groups';
-$txt['membergroups_post'] = 'Post count based groups';
-$txt['membergroups_guests_na'] = 'n/a';
+$txt['membergroups_add_group'] = 'Gruppe hinzufügen';
+$txt['membergroups_regular'] = 'Normale Gruppen';
+$txt['membergroups_post'] = 'Beitragsabhängige Gruppen';
+$txt['membergroups_guests_na'] = 'n.v.';
 
-$txt['membergroups_group_name'] = 'Membergroup name';
-$txt['membergroups_new_board'] = 'Visible Boards';
-$txt['membergroups_new_board_desc'] = 'Boards the membergroup can see';
-$txt['membergroups_new_board_post_groups'] = '<em>Note: normally, post groups don\'t need access because the group the member is in will give them access.</em>';
-$txt['membergroups_new_as_inherit'] = 'inherit from';
-$txt['membergroups_new_as_type'] = 'by type';
-$txt['membergroups_new_as_copy'] = 'based off of';
-$txt['membergroups_new_copy_none'] = '(none)';
-$txt['membergroups_can_edit_later'] = 'You can edit them later.';
+$txt['membergroups_group_name'] = 'Benutzergruppenname';
+$txt['membergroups_new_board'] = 'Sichtbare Foren';
+$txt['membergroups_new_board_desc'] = 'Foren, die die Benutzergruppe sehen kann';
+$txt['membergroups_new_board_post_groups'] = '<em>Hinweis: Normalerweise benötigen Benutzergruppen, die von der Beitragszahl abhängig sind, keinen gesonderten Zugriff, da dieser bereits über die anderen Gruppen eines Mitglieds geregelt wird.</em>';
+$txt['membergroups_new_as_inherit'] = 'erbt von';
+$txt['membergroups_new_as_type'] = 'nach Typ';
+$txt['membergroups_new_as_copy'] = 'basiert auf';
+$txt['membergroups_new_copy_none'] = '(keine)';
+$txt['membergroups_can_edit_later'] = 'Sie können sie später ändern.';
 
-$txt['membergroups_edit_group'] = 'Edit Membergroup';
-$txt['membergroups_edit_name'] = 'Group name';
-$txt['membergroups_edit_inherit_permissions'] = 'Inherit Permissions';
-$txt['membergroups_edit_inherit_permissions_desc'] = 'Select &quot;No&quot; to enable group to have own permission set.';
-$txt['membergroups_edit_inherit_permissions_no'] = 'No - Use Unique Permissions';
-$txt['membergroups_edit_inherit_permissions_from'] = 'Inherit From';
-$txt['membergroups_edit_hidden'] = 'Visibility';
-$txt['membergroups_edit_hidden_no'] = 'Visible';
-$txt['membergroups_edit_hidden_boardindex'] = 'Visible - Apart from in group key';
-$txt['membergroups_edit_hidden_all'] = 'Invisible';
+$txt['membergroups_edit_group'] = 'Benutzergruppe ändern';
+$txt['membergroups_edit_name'] = 'Gruppenname';
+$txt['membergroups_edit_inherit_permissions'] = 'Befugnisse übernehmen';
+$txt['membergroups_edit_inherit_permissions_desc'] = 'Wählen Sie &quot;Nein&quot; aus, um dieser Gruppe eigene Befugnisse zu gewähren.';
+$txt['membergroups_edit_inherit_permissions_no'] = 'Nein - Verwende eigene Befugnisse';
+$txt['membergroups_edit_inherit_permissions_from'] = 'Übernehmen von';
+$txt['membergroups_edit_hidden'] = 'Sichtbarkeit';
+$txt['membergroups_edit_hidden_no'] = 'Sichtbar';
+$txt['membergroups_edit_hidden_boardindex'] = 'Sichtbar - Apart from in group key'; // ehm, what?
+$txt['membergroups_edit_hidden_all'] = 'Unsichtbar';
 // Do not use numeric entities in the below string.
-$txt['membergroups_edit_hidden_warning'] = 'Are you sure you want to disallow assignment of this group as a users primary group?\\n\\nDoing so will restrict assignment to additional groups only, and will update all current &quot;primary&quot; members to have it as an additional group only.';
-$txt['membergroups_edit_desc'] = 'Group description';
-$txt['membergroups_edit_group_type'] = 'Group type';
-$txt['membergroups_edit_select_group_type'] = 'Select Group type';
-$txt['membergroups_group_type_private'] = 'Private <span class="smalltext">(Membership must be assigned)</span>';
-$txt['membergroups_group_type_protected'] = 'Protected <span class="smalltext">(Only administrators can manage and assign)</span>';
-$txt['membergroups_group_type_request'] = 'Requestable <span class="smalltext">(User may request membership)</span>';
-$txt['membergroups_group_type_free'] = 'Free <span class="smalltext">(User may leave and join group at will)</span>';
-$txt['membergroups_group_type_post'] = 'Post Based <span class="smalltext">(Membership based on post count)</span>';
-$txt['membergroups_min_posts'] = 'Required posts';
-$txt['membergroups_online_color'] = 'Color in online list';
-$txt['membergroups_icon_count'] = 'Number of icon images';
-$txt['membergroups_icon_image'] = 'Icon image filename';
-$txt['membergroups_icon_image_note'] = 'Upload icon images in to the default theme directory to enable selection.';
-$txt['membergroups_max_messages'] = 'Max personal messages';
-$txt['membergroups_max_messages_note'] = '0 = unlimited';
-$txt['membergroups_max_messages_desc'] = 'Here you can set the limit of personal messages a user can keep on the server.<br />
-To allow store an unlimited number of personal messages, you can set the value to 0';
-$txt['membergroups_edit_save'] = 'Save';
-$txt['membergroups_delete'] = 'Delete';
-$txt['membergroups_confirm_delete'] = 'Are you sure you want to delete this group?';
+$txt['membergroups_edit_hidden_warning'] = 'Sind Sie sich sicher, dass Sie eine Zuweisung dieser Gruppe als Hauptgruppe eines Benutzers nicht zulassen möchten?\\n\\nDies wird die Zuweisung auf Verwendung als weitere Gruppe beschränken und diese Änderung auch bei allen bestehenden &quot;Hauptbenutzern&quot; vornehmen.';
+$txt['membergroups_edit_desc'] = 'Gruppenbeschreibung';
+$txt['membergroups_edit_group_type'] = 'Gruppentyp';
+$txt['membergroups_edit_select_group_type'] = 'Wählen Sie den Gruppentyp aus';
+$txt['membergroups_group_type_private'] = 'Privat <span class="smalltext">(Mitgliedschaft muss zugewiesen werden)</span>';
+$txt['membergroups_group_type_protected'] = 'Geschützt <span class="smalltext">(Nur Administratoren können die Gruppe zuweisen und verwalten)</span>';
+$txt['membergroups_group_type_request'] = 'Auf Anfrage <span class="smalltext">(Benutzer können Mitgliedschaft beantragen)</span>';
+$txt['membergroups_group_type_free'] = 'Offen <span class="smalltext">(Benutzer können der Gruppe beliebig beitreten und sie verlassen)</span>';
+$txt['membergroups_group_type_post'] = 'Beitragsbasiert <span class="smalltext">(Mitgliedschaft abhängig von der Anzahl der Beiträge)</span>';
+$txt['membergroups_min_posts'] = 'Benötigte Beiträge';
+$txt['membergroups_online_color'] = 'Farbe in Onlineliste';
+$txt['membergroups_icon_count'] = 'Anzahl an Symbolbildern';
+$txt['membergroups_icon_image'] = 'Symbolbild-Dateiname';
+$txt['membergroups_icon_image_note'] = 'Laden Sie Bilddateien in das Standardthemeverzeichnis hoch, um die Auswahl zu aktivieren.';
+$txt['membergroups_max_messages'] = 'Max. private Nachrichten';
+$txt['membergroups_max_messages_note'] = '0 = unbegrenzt';
+$txt['membergroups_max_messages_desc'] = 'Hier können Sie die Höchstzahl an privaten Nachrichten festlegen, die ein Benutzer auf dem Server speichern darf.<br />
+Um eine unbegrenzte Speicherung von privaten Nachrichten zu erlauben, setzen Sie den Wert auf 0.';
+$txt['membergroups_edit_save'] = 'Speichern';
+$txt['membergroups_delete'] = 'Löschen';
+$txt['membergroups_confirm_delete'] = 'Sind Sie sich sicher, dass Sie diese Gruppe löschen möchten?';
 
-$txt['membergroups_members_title'] = 'Viewing Group';
-$txt['membergroups_members_group_members'] = 'Group Members';
-$txt['membergroups_members_no_members'] = 'This group is currently empty';
-$txt['membergroups_members_add_title'] = 'Add a member to this group';
-$txt['membergroups_members_add_desc'] = 'List of Members to Add';
-$txt['membergroups_members_add'] = 'Add Members';
-$txt['membergroups_members_remove'] = 'Remove from Group';
-$txt['membergroups_members_last_active'] = 'Last Active';
-$txt['membergroups_members_additional_only'] = 'Add as additional group only.';
-$txt['membergroups_members_group_moderators'] = 'Group Moderators';
-$txt['membergroups_members_description'] = 'Description';
+$txt['membergroups_members_title'] = 'Gruppe ansehen';
+$txt['membergroups_members_group_members'] = 'Gruppenmitglieder';
+$txt['membergroups_members_no_members'] = 'Diese Gruppe ist momentan leer';
+$txt['membergroups_members_add_title'] = 'Dieser Gruppe ein Mitglied hinzufügen';
+$txt['membergroups_members_add_desc'] = 'Liste hinzuzufügender Mitglieder';
+$txt['membergroups_members_add'] = 'Mitglieder hinzufügen';
+$txt['membergroups_members_remove'] = 'Aus Gruppe entfernen';
+$txt['membergroups_members_last_active'] = 'Zuletzt aktiv';
+$txt['membergroups_members_additional_only'] = 'Nur als zusätzliche Gruppe hinzufügen.';
+$txt['membergroups_members_group_moderators'] = 'Gruppenmoderatoren';
+$txt['membergroups_members_description'] = 'Beschreibung';
 // Use javascript escaping in the below.
-$txt['membergroups_members_deadmin_confirm'] = 'Are you sure you wish to remove yourself from the Administration group?';
+$txt['membergroups_members_deadmin_confirm'] = 'Sind Sie sich sicher, dass Sie sich selbst aus der Gruppe der Administratoren entfernen möchten?';
 
-$txt['membergroups_postgroups'] = 'Post groups';
-$txt['membergroups_settings'] = 'Membergroup Settings';
-$txt['groups_manage_membergroups'] = 'Groups allowed to change membergroups';
-$txt['membergroups_select_permission_type'] = 'Select permission profile';
+$txt['membergroups_postgroups'] = 'Beitragsgruppen'; // ? :)
+$txt['membergroups_settings'] = 'Benutzergruppeneinstellungen';
+$txt['groups_manage_membergroups'] = 'Gruppen, die Benutzergruppen ändern dürfen';
+$txt['membergroups_select_permission_type'] = 'Wählen Sie ein Befugnisprofil aus';
 $txt['membergroups_images_url'] = '{theme URL}/images/group_icons/';
-$txt['membergroups_select_visible_boards'] = 'Show boards';
-$txt['membergroups_members_top'] = 'Members';
+$txt['membergroups_select_visible_boards'] = 'Foren anzeigen';
+$txt['membergroups_members_top'] = 'Mitglieder';
 $txt['membergroups_name'] = 'Name';
-$txt['membergroups_icons'] = 'Icons';
+$txt['membergroups_icons'] = 'Symbole';
 
-$txt['admin_browse_approve'] = 'Members whose accounts are awaiting approval';
-$txt['admin_browse_approve_desc'] = 'From here you can manage all members who are waiting to have their accounts approved.';
-$txt['admin_browse_activate'] = 'Members whose accounts are awaiting activation';
-$txt['admin_browse_activate_desc'] = 'This screen lists all the members who have still not activated their accounts at your forum.';
-$txt['admin_browse_awaiting_approval'] = 'Awaiting Approval [%1$d]';
-$txt['admin_browse_awaiting_activate'] = 'Awaiting Activation [%1$d]';
+$txt['admin_browse_approve'] = 'Mitglieder, deren Konto auf Freischaltung wartet';
+$txt['admin_browse_approve_desc'] = 'Hier können Sie alle Mitglieder verwalten, die auf die Freischaltung ihres Benutzerkontos warten.';
+$txt['admin_browse_activate'] = 'Mitglieder, deren Konto auf Aktivierung wartet';
+$txt['admin_browse_activate_desc'] = 'Diese Seite listet alle Mitglieder auf, die ihr Benutzerkonto in diesem Forum noch immer nicht aktiviert haben.';
+$txt['admin_browse_awaiting_approval'] = 'Wartet auf Freischaltung [%1$d]';
+$txt['admin_browse_awaiting_activate'] = 'Wartet auf Aktivierung [%1$d]';
 
-$txt['admin_browse_username'] = 'Username';
-$txt['admin_browse_email'] = 'Email Address';
-$txt['admin_browse_ip'] = 'IP Address';
-$txt['admin_browse_registered'] = 'Registered';
+$txt['admin_browse_username'] = 'Benutzername';
+$txt['admin_browse_email'] = 'E-Mail-Adresse';
+$txt['admin_browse_ip'] = 'IP-Adresse';
+$txt['admin_browse_registered'] = 'Registriert';
 $txt['admin_browse_id'] = 'ID';
-$txt['admin_browse_with_selected'] = 'With Selected';
-$txt['admin_browse_no_members_approval'] = 'No members currently await approval.';
-$txt['admin_browse_no_members_activate'] = 'No members currently have not activated their accounts.';
+$txt['admin_browse_with_selected'] = 'Mit Auswahl';
+$txt['admin_browse_no_members_approval'] = 'Derzeit wartet kein Mitglied auf Freischaltung.';
+$txt['admin_browse_no_members_activate'] = 'Derzeit hat kein Mitglied sein Konto nicht aktiviert.';
 
 // Don't use entities in the below strings, except the main ones. (lt, gt, quot.)
-$txt['admin_browse_warn'] = 'all selected members?';
-$txt['admin_browse_outstanding_warn'] = 'all affected members?';
-$txt['admin_browse_w_approve'] = 'Approve';
-$txt['admin_browse_w_activate'] = 'Activate';
-$txt['admin_browse_w_delete'] = 'Delete';
-$txt['admin_browse_w_reject'] = 'Reject';
-$txt['admin_browse_w_remind'] = 'Remind';
-$txt['admin_browse_w_approve_deletion'] = 'Approve (Delete Accounts)';
-$txt['admin_browse_w_email'] = 'and send email';
-$txt['admin_browse_w_approve_require_activate'] = 'Approve and require activation';
+// translator note: not entirely sure about this. :<
+$txt['admin_browse_warn'] = 'aller ausgewählten Mitglieder?';
+$txt['admin_browse_outstanding_warn'] = 'aller betroffenen Mitglieder?';
+$txt['admin_browse_w_approve'] = 'Freischaltung';
+$txt['admin_browse_w_activate'] = 'Aktivierung';
+$txt['admin_browse_w_delete'] = 'Löschung';
+$txt['admin_browse_w_reject'] = 'Zurückweisung';
+$txt['admin_browse_w_remind'] = 'Erinnerung';
+$txt['admin_browse_w_approve_deletion'] = 'Freischaltung (Konten löschen)';
+$txt['admin_browse_w_email'] = 'und E-Mail-Benachrichtigung';
+$txt['admin_browse_w_approve_require_activate'] = 'Freischaltung und Anforderung der Aktivierung';
 
-$txt['admin_browse_filter_by'] = 'Filter By';
-$txt['admin_browse_filter_show'] = 'Displaying';
-$txt['admin_browse_filter_type_0'] = 'Unactivated new accounts';
-$txt['admin_browse_filter_type_2'] = 'Unactivated email changes';
-$txt['admin_browse_filter_type_3'] = 'Unapproved new accounts';
-$txt['admin_browse_filter_type_4'] = 'Unapproved account deletions';
-$txt['admin_browse_filter_type_5'] = 'Unapproved "Under Age" Accounts';
+$txt['admin_browse_filter_by'] = 'Filtern nach';
+$txt['admin_browse_filter_show'] = 'Zeige';
+$txt['admin_browse_filter_type_0'] = 'Nicht aktivierte neue Konten';
+$txt['admin_browse_filter_type_2'] = 'Nicht aktivierte E-Mail-Adressänderungen';
+$txt['admin_browse_filter_type_3'] = 'Nicht freigeschaltete neue Konten';
+$txt['admin_browse_filter_type_4'] = 'Nicht freigeschaltete Kontolöschungen';
+$txt['admin_browse_filter_type_5'] = 'Nicht freigeschaltete Konten Minderjähriger';
 
-$txt['admin_browse_outstanding'] = 'Outstanding Members';
-$txt['admin_browse_outstanding_days_1'] = 'With all members who registered longer than';
-$txt['admin_browse_outstanding_days_2'] = 'days ago';
-$txt['admin_browse_outstanding_perform'] = 'Perform the following action';
-$txt['admin_browse_outstanding_go'] = 'Perform Action';
+$txt['admin_browse_outstanding'] = 'Ausstehende Mitgliedschaften';
+$txt['admin_browse_outstanding_days_1'] = 'Mit allen Mitgliedern, die sich vor mehr als';
+$txt['admin_browse_outstanding_days_2'] = 'Tagen registriert haben';
+$txt['admin_browse_outstanding_perform'] = 'Folgende Aktion ausführen';
+$txt['admin_browse_outstanding_go'] = 'Aktion ausführen';
 
-$txt['check_for_duplicate'] = 'Check for duplicates';
-$txt['dont_check_for_duplicate'] = 'Don\'t check for duplicates';
-$txt['duplicates'] = 'Duplicates';
+$txt['check_for_duplicate'] = 'Auf Duplikate prüfen';
+$txt['dont_check_for_duplicate'] = 'Nicht auf Duplikate prüfen';
+$txt['duplicates'] = 'Duplikate';
 
-$txt['not_activated'] = 'Not activated';
+$txt['not_activated'] = 'Nicht aktiviert';

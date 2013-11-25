@@ -1,33 +1,33 @@
 <?php
 // Version: 1.0; mentions
 
-$txt['my_mentions'] = 'My notifications';
-$txt['my_unread_mentions'] = 'My unread notifications';
-$txt['my_mentions_pages'] = 'page %1$d';
-$txt['no_mentions_yet'] = 'No mentions';
-$txt['no_new_mentions'] = 'No new mentions';
+$txt['my_mentions'] = 'Meine Benachrichtigungen';
+$txt['my_unread_mentions'] = 'Meine ungelesenen Benachrichtungen';
+$txt['my_mentions_pages'] = 'Seite %1$d';
+$txt['no_mentions_yet'] = 'Keine Benachrichtigungen';
+$txt['no_new_mentions'] = 'Keine neuen Benachrichtigungen';
 
-$txt['mentions_from'] = 'Member';
-$txt['mentions_when'] = 'When';
-$txt['mentions_what'] = 'Mention';
-$txt['mentions_all'] = 'Show all';
-$txt['mentions_unread'] = 'Show unread';
-$txt['mentions_action'] = 'Actions';
-$txt['mentions_delete_warning'] = 'Are you sure you want to delete this entry?';
-$txt['mentions_markread'] = 'Mark as read';
-$txt['mentions_markunread'] = 'Mark as unread';
+$txt['mentions_from'] = 'Benutzer';
+$txt['mentions_when'] = 'Wann';
+$txt['mentions_what'] = 'Erwähnung';
+$txt['mentions_all'] = 'Alle anzeigen';
+$txt['mentions_unread'] = 'Ungelesene anzeigen';
+$txt['mentions_action'] = 'Aktionen';
+$txt['mentions_delete_warning'] = 'Sind Sie sich sicher, dass Sie diesen Eintrag löschen möchten?';
+$txt['mentions_markread'] = 'Als gelesen markieren';
+$txt['mentions_markunread'] = 'Als ungelesen markieren';
 
-$txt['mentions_settings'] = 'Mention Settings';
-$txt['mentions_enabled'] = 'Enable site mentioning';
-$txt['mentions_buddy'] = 'Add a mention when a member is added to someone\'s buddy list';
+$txt['mentions_settings'] = 'Erwähnungseinstellungen';
+$txt['mentions_enabled'] = 'Erwähnungen aktivieren';
+$txt['mentions_buddy'] = 'Mitglieder benachrichtigen, die zu Freundeslisten hinzugefügt werden';
 
-$txt['mention_men'] = 'Mentioned you in the message {msg_link}';
-$txt['mention_like'] = 'Liked your message {msg_link}';
-$txt['mention_rlike'] = 'Unliked your message {msg_link}';
-$txt['mention_buddy'] = 'Added you to their buddy list.';
+$txt['mention_men'] = 'Hat Sie in der Nachricht {msg_link} erwähnt';
+$txt['mention_like'] = 'Gefällt Ihre Nachricht {msg_link}';
+$txt['mention_rlike'] = 'Gefällt Ihre Nachricht {msg_link} nicht mehr';
+$txt['mention_buddy'] = 'Hat Sie zu seiner Freundesliste hinzugefügt.';
 
-$txt['mentions_type_all'] = 'All Mentions';
-$txt['mentions_type_men'] = 'Mentioned';
-$txt['mentions_type_like'] = 'Likes';
-$txt['mentions_type_rlike'] = 'Unlikes';
-$txt['mentions_type_buddy'] = 'Buddy';
+$txt['mentions_type_all'] = 'Alle Benachrichtigungen';
+$txt['mentions_type_men'] = 'Erwähnungen';
+$txt['mentions_type_like'] = 'Gefällt mir';
+$txt['mentions_type_rlike'] = 'Gefällt mir nicht mehr';
+$txt['mentions_type_buddy'] = 'Freund';
