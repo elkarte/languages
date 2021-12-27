@@ -1,13 +1,13 @@
 ### Language packs
 
-If you want to help translate ElkArte to your language, there are two ways:
-* clone this repository and work on it with the usual git/github workflow
-* download the language packages, work on them and attach the result to a post at our community http://www.elkarte.net/
- 
-If the language pack doesn't exist yet, feel free to create it by yourself or ask for it to be created opening an [issue](https://github.com/elkarte/languages/issues) or posting at [our site](http://www.elkarte.net/).
+This repo is a snapshot of currently availalbe translation packages from the [Translations](http://translations.elkarte.net) site.  The most current data will always be on [Transifex](https://www.transifex.com/elkarte/elkarte) which is the main site for all our translations.  This repo will be refreshed from time to time as a download convince.
 
+To help translate ElkArte to your language, or make improvements to work that has been started, you use [Transifex](https://www.transifex.com/elkarte/elkarte).  You can register for an ID and use the interface there.
+ 
+If a language pack doesn't exist, feel free to create it yourself or ask for it to be created by opening an [issue](https://github.com/elkarte/languages/issues) 
 
 ### Downloads
 
-https://github.com/elkarte/languages/releases
+These language packages are created nightly and will always be the [most current](http://translations.elkarte.net).  The files in this repo are periodic snapshots and may not represent the most up to date translations.
 
+http://translations.elkarte.net
